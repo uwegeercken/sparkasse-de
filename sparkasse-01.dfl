@@ -35,7 +35,7 @@
       "code": "# import the standard library\nimport core, data, strings, time, math, fun, locale, regex, bin, decimals from 'std';\n",
       "size": {
         "width": 0,
-        "height": 102
+        "height": 65
       },
       "editor": {
         "collapsed": false
@@ -58,14 +58,14 @@
             "value": {
               "widgetType": "expression/code",
               "widgetData": {
-                "text": "{\n  :Lebensmittel {\n    :Essen {:Kategorie 'Lebensmittel', :Subkategorie 'Essen'}\n  },\n  :SteuernAbgaben {\n    :Auto {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Auto'}\n  },\n  :Mobilitaet {\n    :Tanken {:Kategorie 'Mobilitaet', :Subkategorie 'Tanken'}\n  },\n  :Wohnen {\n    :Baumarkt {:Kategorie 'Wohnen', :Subkategorie 'Baumarkt'}\n  },\n  :Shopping {\n    :Online {:Kategorie 'Shopping', :Subkategorie 'Online'}\n  },\n  :Shopping {\n    :Geschaeft {:Kategorie 'Shopping', :Subkategorie 'Geschaeft'}\n  }\n  \n}",
+                "text": "{\n  :Einkommen {\n    :Lohn {:Kategorie 'Einkommen', :Subkategorie 'Lohn'},\n    :Zinsen {:Kategorie 'Einkommen', :Subkategorie 'Zinsen'},\n    :Rueckerstattung {:Kategorie 'Einkommen', :Subkategorie 'Rücherstattung'},\n    :Verschiedenes {:Kategorie 'Einkommen', :Subkategorie 'Verschiedenes'}\n  },\n  :KommunikationMedien {\n    :Handy {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Handy'},\n    :Telefon {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Telefon'},\n    :Internet {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Internet'},\n    :RadioTv {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Radio/TV'},\n    :Verschiedenes {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Verschiedenes'}\n  },\n  :Gesundheit {\n    :Apotheke {:Kategorie 'Gesundheit', :Subkategorie 'Apotheke'},\n    :Drogerie {:Kategorie 'Gesundheit', :Subkategorie 'Drogerie'},\n    :Optiker {:Kategorie 'Gesundheit', :Subkategorie 'Optiker'},\n    :Arzt {:Kategorie 'Gesundheit', :Subkategorie 'Arzt'},\n    :Krankenhaus {:Kategorie 'Gesundheit', :Subkategorie 'Krankenhaus'},\n    :Verschiedenes {:Kategorie 'Gesundheit', :Subkategorie 'Verschiedenes'}\n  },\n  :SteuernAbgaben {\n    :Auto {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Auto'},\n    :Motorrad {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Motorrad'},\n    :Gebuehren {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Gebuehren'},\n    :Verschiedenes {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Verschiedenes'}\n  },\n  :Mobilitaet {\n    :Tanken {:Kategorie 'Mobilitaet', :Subkategorie 'Tanken'},\n    :Fahrrad {:Kategorie 'Mobilitaet', :Subkategorie 'Fahrrad'},\n    :ZugBus {:Kategorie 'Mobilitaet', :Subkategorie 'Öffentlicher Verkehr'},\n    :Motorrad {:Kategorie 'Mobilitaet', :Subkategorie 'Auto'},\n    :Verschiedenes {:Kategorie 'Mobilitaet', :Subkategorie 'Verschiedenes'}\n  },\n  :Wohnen {\n    :Baumarkt {:Kategorie 'Wohnen', :Subkategorie 'Baumarkt'},\n    :Miete {:Kategorie 'Wohnen', :Subkategorie 'Miete'},\n    :Strom {:Kategorie 'Wohnen', :Subkategorie 'Strom'},\n    :WasserAbwasser {:Kategorie 'Wohnen', :Subkategorie 'Wasser/Abwasser'},\n    :Heizung {:Kategorie 'Wohnen', :Subkategorie 'Heizung'},\n    :Verschiedenes {:Kategorie 'Wohnen', :Subkategorie 'Verschiedenes'}\n  },\n  :Shopping {\n    :Online {:Kategorie 'Shopping', :Subkategorie 'Online'},\n    :Geschaeft {:Kategorie 'Shopping', :Subkategorie 'Geschaeft'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  },\n  :Haushalt {\n    :Lebensmittel {:Kategorie 'Haushalt', :Subkategorie 'Lebensmittel'},\n    :Haustiere {:Kategorie 'Haushalt', :Subkategorie 'Haustiere'},\n    :Bueroartikel {:Kategorie 'Haushalt', :Subkategorie 'Bueroartikel'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  }\n}",
                 "size": {
                   "width": 0,
-                  "height": 304
+                  "height": 269
                 },
                 "syntax": "tweakflow"
               },
-              "code": "{\n  :Lebensmittel {\n    :Essen {:Kategorie 'Lebensmittel', :Subkategorie 'Essen'}\n  },\n  :SteuernAbgaben {\n    :Auto {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Auto'}\n  },\n  :Mobilitaet {\n    :Tanken {:Kategorie 'Mobilitaet', :Subkategorie 'Tanken'}\n  },\n  :Wohnen {\n    :Baumarkt {:Kategorie 'Wohnen', :Subkategorie 'Baumarkt'}\n  },\n  :Shopping {\n    :Online {:Kategorie 'Shopping', :Subkategorie 'Online'}\n  },\n  :Shopping {\n    :Geschaeft {:Kategorie 'Shopping', :Subkategorie 'Geschaeft'}\n  }\n  \n}"
+              "code": "{\n  :Einkommen {\n    :Lohn {:Kategorie 'Einkommen', :Subkategorie 'Lohn'},\n    :Zinsen {:Kategorie 'Einkommen', :Subkategorie 'Zinsen'},\n    :Rueckerstattung {:Kategorie 'Einkommen', :Subkategorie 'Rücherstattung'},\n    :Verschiedenes {:Kategorie 'Einkommen', :Subkategorie 'Verschiedenes'}\n  },\n  :KommunikationMedien {\n    :Handy {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Handy'},\n    :Telefon {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Telefon'},\n    :Internet {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Internet'},\n    :RadioTv {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Radio/TV'},\n    :Verschiedenes {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Verschiedenes'}\n  },\n  :Gesundheit {\n    :Apotheke {:Kategorie 'Gesundheit', :Subkategorie 'Apotheke'},\n    :Drogerie {:Kategorie 'Gesundheit', :Subkategorie 'Drogerie'},\n    :Optiker {:Kategorie 'Gesundheit', :Subkategorie 'Optiker'},\n    :Arzt {:Kategorie 'Gesundheit', :Subkategorie 'Arzt'},\n    :Krankenhaus {:Kategorie 'Gesundheit', :Subkategorie 'Krankenhaus'},\n    :Verschiedenes {:Kategorie 'Gesundheit', :Subkategorie 'Verschiedenes'}\n  },\n  :SteuernAbgaben {\n    :Auto {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Auto'},\n    :Motorrad {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Motorrad'},\n    :Gebuehren {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Gebuehren'},\n    :Verschiedenes {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Verschiedenes'}\n  },\n  :Mobilitaet {\n    :Tanken {:Kategorie 'Mobilitaet', :Subkategorie 'Tanken'},\n    :Fahrrad {:Kategorie 'Mobilitaet', :Subkategorie 'Fahrrad'},\n    :ZugBus {:Kategorie 'Mobilitaet', :Subkategorie 'Öffentlicher Verkehr'},\n    :Motorrad {:Kategorie 'Mobilitaet', :Subkategorie 'Auto'},\n    :Verschiedenes {:Kategorie 'Mobilitaet', :Subkategorie 'Verschiedenes'}\n  },\n  :Wohnen {\n    :Baumarkt {:Kategorie 'Wohnen', :Subkategorie 'Baumarkt'},\n    :Miete {:Kategorie 'Wohnen', :Subkategorie 'Miete'},\n    :Strom {:Kategorie 'Wohnen', :Subkategorie 'Strom'},\n    :WasserAbwasser {:Kategorie 'Wohnen', :Subkategorie 'Wasser/Abwasser'},\n    :Heizung {:Kategorie 'Wohnen', :Subkategorie 'Heizung'},\n    :Verschiedenes {:Kategorie 'Wohnen', :Subkategorie 'Verschiedenes'}\n  },\n  :Shopping {\n    :Online {:Kategorie 'Shopping', :Subkategorie 'Online'},\n    :Geschaeft {:Kategorie 'Shopping', :Subkategorie 'Geschaeft'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  },\n  :Haushalt {\n    :Lebensmittel {:Kategorie 'Haushalt', :Subkategorie 'Lebensmittel'},\n    :Haustiere {:Kategorie 'Haushalt', :Subkategorie 'Haustiere'},\n    :Bueroartikel {:Kategorie 'Haushalt', :Subkategorie 'Bueroartikel'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  }\n}"
             }
           }
         ]
@@ -1771,19 +1771,83 @@
                 }
               },
               {
-                "name": "lebensmittel_essen",
+                "name": "einkommen_lohn",
                 "type": "any",
                 "value": {
                   "widgetType": "expression/code",
                   "widgetData": {
-                    "text": "[\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\"]",
+                    "text": "[\"Verdienstabrechnung\"]",
                     "size": {
                       "width": 0,
                       "height": 36
                     },
                     "syntax": "tweakflow"
                   },
-                  "code": "[\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\"]"
+                  "code": "[\"Verdienstabrechnung\"]"
+                }
+              },
+              {
+                "name": "haushalt_lebensmittel",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "[\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\", \"Kaufland\"]",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "[\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\", \"Kaufland\"]"
+                }
+              },
+              {
+                "name": "gesundheit_drogerie",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "[\"PARFUEMERIE DOUGLAS\"]",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "[\"PARFUEMERIE DOUGLAS\"]"
+                }
+              },
+              {
+                "name": "kommunikationMedien_radioTv",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "[\"Netflix.com\"]",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "[\"Netflix.com\"]"
+                }
+              },
+              {
+                "name": "steuernAbgaben_motorrad",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "[\"Kfz-Steuer\"]",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "[\"Kfz-Steuer\"]"
                 }
               },
               {
@@ -1819,7 +1883,7 @@
                 }
               },
               {
-                "name": "steuernAbgaben_auto",
+                "name": "steuernAbgaben_gebuehren",
                 "type": "any",
                 "value": {
                   "widgetType": "expression/code",
@@ -1909,26 +1973,110 @@
                     "condition": {
                       "widgetType": "expression/code",
                       "widgetData": {
-                        "text": "(input) -> vars.enthaelt(vars.lebensmittel_essen,input)",
+                        "text": "(input) -> vars.enthaelt(vars.einkommen_lohn,input)",
                         "size": {
                           "width": 0,
                           "height": 36
                         },
                         "syntax": "tweakflow"
                       },
-                      "code": "(input) -> vars.enthaelt(vars.lebensmittel_essen,input)"
+                      "code": "(input) -> vars.enthaelt(vars.einkommen_lohn,input)"
                     },
                     "value": {
                       "widgetType": "expression/code",
                       "widgetData": {
-                        "text": "flow.vars.kategorien[:Lebensmittel,:Essen]",
+                        "text": "flow.vars.kategorien[:Einkommen,:Lohn]",
                         "size": {
                           "width": 0,
                           "height": 36
                         },
                         "syntax": "tweakflow"
                       },
-                      "code": "flow.vars.kategorien[:Lebensmittel,:Essen]"
+                      "code": "flow.vars.kategorien[:Einkommen,:Lohn]"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "condition": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "(input) -> vars.enthaelt(vars.haushalt_lebensmittel,input)",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "(input) -> vars.enthaelt(vars.haushalt_lebensmittel,input)"
+                    },
+                    "value": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "flow.vars.kategorien[:Haushalt,:Lebensmittel]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "flow.vars.kategorien[:Haushalt,:Lebensmittel]"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "condition": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "(input) -> vars.enthaelt(vars.gesundheit_drogerie,input)",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "(input) -> vars.enthaelt(vars.gesundheit_drogerie,input)"
+                    },
+                    "value": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "flow.vars.kategorien[:Gesundheit,:Drogerie]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "flow.vars.kategorien[:Gesundheit,:Drogerie]"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "condition": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "(input) -> vars.enthaelt(vars.kommunikationMedien_radioTv,input)",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "(input) -> vars.enthaelt(vars.kommunikationMedien_radioTv,input)"
+                    },
+                    "value": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "flow.vars.kategorien[:KommunikationMedien,:RadioTv]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "flow.vars.kategorien[:KommunikationMedien,:RadioTv]"
                     }
                   }
                 },
@@ -1993,26 +2141,54 @@
                     "condition": {
                       "widgetType": "expression/code",
                       "widgetData": {
-                        "text": "(input) -> vars.enthaelt(vars.steuernAbgaben_auto,input)",
+                        "text": "(input) -> vars.enthaelt(vars.steuernAbgaben_gebuehren,input)",
                         "size": {
                           "width": 0,
                           "height": 36
                         },
                         "syntax": "tweakflow"
                       },
-                      "code": "(input) -> vars.enthaelt(vars.steuernAbgaben_auto,input)"
+                      "code": "(input) -> vars.enthaelt(vars.steuernAbgaben_gebuehren,input)"
                     },
                     "value": {
                       "widgetType": "expression/code",
                       "widgetData": {
-                        "text": "flow.vars.kategorien[:SteuernAbgaben,:Auto]",
+                        "text": "flow.vars.kategorien[:SteuernAbgaben,:Gebuehren]",
                         "size": {
                           "width": 0,
                           "height": 36
                         },
                         "syntax": "tweakflow"
                       },
-                      "code": "flow.vars.kategorien[:SteuernAbgaben,:Auto]"
+                      "code": "flow.vars.kategorien[:SteuernAbgaben,:Gebuehren]"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "condition": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "(input) -> vars.enthaelt(vars.steuernAbgaben_motorrad,input)",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "(input) -> vars.enthaelt(vars.steuernAbgaben_motorrad,input)"
+                    },
+                    "value": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "flow.vars.kategorien[:SteuernAbgaben,:Motorrad]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "flow.vars.kategorien[:SteuernAbgaben,:Motorrad]"
                     }
                   }
                 },
@@ -2075,7 +2251,7 @@
               ]
             }
           },
-          "code": "[{\n  :condition (input) -> vars.enthaelt(vars.lebensmittel_essen,input),\n  :value flow.vars.kategorien[:Lebensmittel,:Essen]\n}, {\n  :condition (input) -> vars.enthaelt(vars.shopping_online,input),\n  :value flow.vars.kategorien[:Shopping,:Online]\n}, {\n  :condition (input) -> vars.enthaelt(vars.shopping_geschaeft,input),\n  :value flow.vars.kategorien[:Shopping,:Geschaeft]\n}, {\n  :condition (input) -> vars.enthaelt(vars.steuernAbgaben_auto,input),\n  :value flow.vars.kategorien[:SteuernAbgaben,:Auto]\n}, {\n  :condition (input) -> vars.enthaelt(vars.mobilitaet_tanken,input),\n  :value flow.vars.kategorien[:Mobilitaet,:Tanken]\n}, {\n  :condition (input) -> vars.enthaelt(vars.wohnen_baumarkt,input),\n  :value flow.vars.kategorien[:Wohnen,:Baumarkt]\n}]"
+          "code": "[{\n  :condition (input) -> vars.enthaelt(vars.einkommen_lohn,input),\n  :value flow.vars.kategorien[:Einkommen,:Lohn]\n}, {\n  :condition (input) -> vars.enthaelt(vars.haushalt_lebensmittel,input),\n  :value flow.vars.kategorien[:Haushalt,:Lebensmittel]\n}, {\n  :condition (input) -> vars.enthaelt(vars.gesundheit_drogerie,input),\n  :value flow.vars.kategorien[:Gesundheit,:Drogerie]\n}, {\n  :condition (input) -> vars.enthaelt(vars.kommunikationMedien_radioTv,input),\n  :value flow.vars.kategorien[:KommunikationMedien,:RadioTv]\n}, {\n  :condition (input) -> vars.enthaelt(vars.shopping_online,input),\n  :value flow.vars.kategorien[:Shopping,:Online]\n}, {\n  :condition (input) -> vars.enthaelt(vars.shopping_geschaeft,input),\n  :value flow.vars.kategorien[:Shopping,:Geschaeft]\n}, {\n  :condition (input) -> vars.enthaelt(vars.steuernAbgaben_gebuehren,input),\n  :value flow.vars.kategorien[:SteuernAbgaben,:Gebuehren]\n}, {\n  :condition (input) -> vars.enthaelt(vars.steuernAbgaben_motorrad,input),\n  :value flow.vars.kategorien[:SteuernAbgaben,:Motorrad]\n}, {\n  :condition (input) -> vars.enthaelt(vars.mobilitaet_tanken,input),\n  :value flow.vars.kategorien[:Mobilitaet,:Tanken]\n}, {\n  :condition (input) -> vars.enthaelt(vars.wohnen_baumarkt,input),\n  :value flow.vars.kategorien[:Wohnen,:Baumarkt]\n}]"
         },
         "defaultValue": {
           "widgetType": "expression/code",
