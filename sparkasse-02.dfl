@@ -1,0 +1,752 @@
+{
+  "type": "data-flow",
+  "appVersion": "1.19.2",
+  "properties": {
+    "meta": {
+      "comment": {
+        "markdown": {
+          "text": {
+            "text": "",
+            "syntax": "markdown",
+            "size": {
+              "width": "100%",
+              "height": "100%"
+            }
+          },
+          "size": {
+            "width": null,
+            "height": 160
+          },
+          "view": "edit"
+        },
+        "editor": {
+          "collapsed": true
+        }
+      },
+      "showingComment": true
+    },
+    "editor": {
+      "showParameters": true,
+      "showVariables": true,
+      "showServices": true,
+      "dialogWidth": "wide"
+    },
+    "imports": {
+      "code": "# import the standard library\nimport core, data, strings, time, math, fun, locale, regex, bin, decimals from 'std';\n",
+      "size": {
+        "width": 0,
+        "height": 102
+      },
+      "editor": {
+        "collapsed": false
+      }
+    },
+    "parameters": {
+      "parameters": {
+        "list": []
+      },
+      "editor": {
+        "collapsed": false
+      }
+    },
+    "variables": {
+      "variables": {
+        "list": []
+      },
+      "editor": {
+        "collapsed": false
+      }
+    },
+    "services": {
+      "services": {
+        "list": [
+          {
+            "name": "mongodb_local",
+            "type": "any",
+            "category": "mongodb",
+            "value": {
+              "widgetType": "expression/mongodb",
+              "widgetData": {
+                "type": "com.twineworks.tweakstreet.library.mongodb.generic",
+                "db": {
+                  "protocol": {
+                    "widgetType": "expression/select",
+                    "widgetData": {
+                      "family": "com.twineworks.tweakstreet.library.mongodb.generic/protocol",
+                      "value": "mongodb"
+                    },
+                    "code": "'mongodb'"
+                  },
+                  "hosts": {
+                    "widgetType": "expression/data-grid",
+                    "widgetData": {
+                      "fields": [
+                        {
+                          "id": "name",
+                          "name": "name"
+                        },
+                        {
+                          "id": "port",
+                          "name": "port"
+                        }
+                      ],
+                      "gen": {
+                        "as": "rows",
+                        "of": "dict",
+                        "meta": false
+                      },
+                      "table": {
+                        "list": [
+                          {
+                            "fields": {
+                              "name": {
+                                "widgetType": "expression/string",
+                                "widgetData": {
+                                  "interpolation": true,
+                                  "text": "localhost"
+                                },
+                                "code": "'localhost'"
+                              },
+                              "port": {
+                                "widgetType": "expression/string",
+                                "widgetData": {
+                                  "interpolation": true,
+                                  "text": "27017"
+                                },
+                                "code": "'27017'"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "code": "[{\n  :name 'localhost',\n  :port '27017'\n}]"
+                  },
+                  "username": {
+                    "widgetType": "expression/string",
+                    "widgetData": {
+                      "interpolation": true,
+                      "text": ""
+                    },
+                    "code": "''"
+                  },
+                  "password": {
+                    "widgetType": "expression/password",
+                    "widgetData": {
+                      "text": "",
+                      "encrypted": false
+                    },
+                    "code": "''"
+                  },
+                  "authDb": {
+                    "widgetType": "expression/string",
+                    "widgetData": {
+                      "interpolation": true,
+                      "text": ""
+                    },
+                    "code": "''"
+                  },
+                  "options": {
+                    "widgetType": "expression/data-grid",
+                    "widgetData": {
+                      "fields": [
+                        {
+                          "id": "name",
+                          "name": "name"
+                        },
+                        {
+                          "id": "value",
+                          "name": "value"
+                        }
+                      ],
+                      "gen": {
+                        "as": "rows",
+                        "of": "dict",
+                        "meta": false
+                      },
+                      "table": {
+                        "list": [
+                          {
+                            "fields": {
+                              "name": {
+                                "widgetType": "expression/string",
+                                "widgetData": {
+                                  "interpolation": true,
+                                  "text": "compressors"
+                                },
+                                "code": "'compressors'"
+                              },
+                              "value": {
+                                "widgetType": "expression/string",
+                                "widgetData": {
+                                  "interpolation": true,
+                                  "text": "zlib"
+                                },
+                                "code": "'zlib'"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "code": "[{\n  :name 'compressors',\n  :value 'zlib'\n}]"
+                  },
+                  "editor": {},
+                  "model": {}
+                },
+                "summary": true
+              },
+              "code": "{\n  :type 'com.twineworks.tweakstreet.library.mongodb.generic',\n  :db {\n    :protocol 'mongodb',\n    :hosts [{\n      :name 'localhost',\n      :port '27017'\n    }],\n    :username '',\n    :password '',\n    :authDb '',\n    :options [{\n      :name 'compressors',\n      :value 'zlib'\n    }]\n  }\n}"
+            }
+          }
+        ]
+      },
+      "editor": {
+        "collapsed": false
+      }
+    }
+  },
+  "steps": [
+    {
+      "id": "com.twineworks.tweakstreet.library.steps.input.mongodbfind_2b87da3c-d27f-4aa7-9b73-bfc5bd946ad8",
+      "name": "MongoDB Find",
+      "type": "com.twineworks.tweakstreet.library.steps.input.mongodbfind",
+      "instanceCount": {
+        "widgetType": "expression/number",
+        "widgetData": {
+          "text": "1"
+        },
+        "code": "1"
+      },
+      "data": {
+        "meta": {
+          "name": "MongoDB Find",
+          "showingComment": false,
+          "comment": {
+            "markdown": {
+              "text": {
+                "text": "",
+                "syntax": "markdown",
+                "size": {
+                  "width": "100%",
+                  "height": "100%"
+                }
+              },
+              "size": {
+                "width": null,
+                "height": 160
+              },
+              "view": "edit"
+            },
+            "editor": {
+              "collapsed": true
+            }
+          }
+        },
+        "entryVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "tabs": {},
+        "connection": {
+          "widgetType": "expression/mongodb-ref",
+          "widgetData": {
+            "name": "mongodb_local"
+          },
+          "code": "::flow.services.mongodb_local"
+        },
+        "database": {
+          "widgetType": "expression/mongodb-database",
+          "widgetData": {
+            "interpolation": true,
+            "text": "sparkasse"
+          },
+          "code": "'sparkasse'"
+        },
+        "collection": {
+          "widgetType": "expression/mongodb-collection",
+          "widgetData": {
+            "interpolation": true,
+            "text": "transaktionen"
+          },
+          "code": "'transaktionen'"
+        },
+        "query": {
+          "widgetType": "expression/text",
+          "widgetData": {
+            "text": "{}",
+            "size": {
+              "width": 0,
+              "height": 200
+            },
+            "syntax": "javascript",
+            "lineSeparator": "\n",
+            "interpolation": false
+          },
+          "code": "'{}'"
+        },
+        "projection": {
+          "widgetType": "expression/text",
+          "widgetData": {
+            "text": "{}",
+            "size": {
+              "width": 0,
+              "height": 60
+            },
+            "syntax": "javascript",
+            "lineSeparator": "\n",
+            "interpolation": false
+          },
+          "code": "'{}'"
+        },
+        "sort": {
+          "widgetType": "expression/text",
+          "widgetData": {
+            "text": "",
+            "size": {
+              "width": 0,
+              "height": 60
+            },
+            "syntax": "javascript",
+            "lineSeparator": "\n",
+            "interpolation": false
+          },
+          "code": "''"
+        },
+        "limit": {
+          "widgetType": "expression/number",
+          "widgetData": {
+            "text": ""
+          },
+          "code": "nil"
+        },
+        "batchSize": {
+          "widgetType": "expression/number",
+          "widgetData": {
+            "text": ""
+          },
+          "code": "nil"
+        },
+        "allowDiskUse": {
+          "widgetType": "expression/checkbox-boolean",
+          "widgetData": {
+            "value": false
+          },
+          "code": "false"
+        },
+        "resultVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "outputFields": {
+          "outputFields": {
+            "list": [
+              {
+                "name": "record",
+                "type": "dict",
+                "value": {
+                  "widgetType": "expression/result-ref",
+                  "widgetData": {
+                    "value": "::results.record"
+                  },
+                  "code": "::results.record"
+                }
+              }
+            ]
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "editor": {
+          "showEntryVariables": false,
+          "showResultVariables": false,
+          "showOutputFields": true
+        },
+        "model": {}
+      },
+      "pos": {
+        "x": 298,
+        "y": 170
+      }
+    },
+    {
+      "id": "com.twineworks.tweakstreet.library.steps.group.groupby_d3319cbd-ad00-4dee-9d4e-8b26bb634bbd",
+      "name": "Group By",
+      "type": "com.twineworks.tweakstreet.library.steps.group.groupby",
+      "instanceCount": {
+        "widgetType": "expression/number",
+        "widgetData": {
+          "text": "1"
+        },
+        "code": "1"
+      },
+      "data": {
+        "meta": {
+          "name": "Group By",
+          "showingComment": false,
+          "comment": {
+            "markdown": {
+              "text": {
+                "text": "",
+                "syntax": "markdown",
+                "size": {
+                  "width": "100%",
+                  "height": "100%"
+                }
+              },
+              "size": {
+                "width": null,
+                "height": 160
+              },
+              "view": "edit"
+            },
+            "editor": {
+              "collapsed": true
+            }
+          }
+        },
+        "entryVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "groupFields": {
+          "groupFields": {
+            "list": [
+              {
+                "name": "Jahr",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "time.year(in.record[:Valutadatum])",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "time.year(in.record[:Valutadatum])"
+                }
+              },
+              {
+                "name": "Beguenstigter_Zahlungspflichtiger",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "in.record[:Beguenstigter_Zahlungspflichtiger_Alternative]",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "in.record[:Beguenstigter_Zahlungspflichtiger_Alternative]"
+                }
+              }
+            ]
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "collatedGroups": {
+          "widgetType": "expression/checkbox-boolean",
+          "widgetData": {
+            "value": false
+          },
+          "code": "false"
+        },
+        "aggregationFields": {
+          "aggregationFields": {
+            "list": [
+              {
+                "name": "total",
+                "type": "any",
+                "aggregation": {
+                  "widgetType": "expression/aggregate-sum",
+                  "widgetData": {
+                    "nilHandling": {
+                      "widgetType": "expression/select",
+                      "widgetData": {
+                        "family": "expression/select/nilHandling",
+                        "value": "ignore"
+                      },
+                      "code": "'ignore'"
+                    },
+                    "nanHandling": {
+                      "widgetType": "expression/select",
+                      "widgetData": {
+                        "family": "expression/select/NaNHandling",
+                        "value": "ignore"
+                      },
+                      "code": "'ignore'"
+                    },
+                    "editor": {
+                      "collapsed": true
+                    },
+                    "model": {}
+                  },
+                  "code": "let {\n  make_aggregator: (string nilHandling, string nanHandling) -> via {:class 'com.twineworks.tweakstreet.library.aggregation.Aggregators$sum_aggregator'};\n}\nmake_aggregator('ignore', 'ignore')\n"
+                },
+                "subject": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "in.record[:Betrag]",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "in.record[:Betrag]"
+                }
+              }
+            ]
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "resultVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "outputFields": {
+          "outputFields": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "editor": {
+          "showEntryVariables": false,
+          "showGroupFields": true,
+          "showResultVariables": false,
+          "showOutputFields": false
+        },
+        "model": {}
+      },
+      "pos": {
+        "x": 522,
+        "y": 170
+      }
+    },
+    {
+      "id": "com.twineworks.tweakstreet.library.steps.sort.sort_4e1ee5b9-4eb6-4204-83aa-c9608a32c844",
+      "name": "Sort",
+      "type": "com.twineworks.tweakstreet.library.steps.sort.sort",
+      "instanceCount": {
+        "widgetType": "expression/number",
+        "widgetData": {
+          "text": "1"
+        },
+        "code": "1"
+      },
+      "data": {
+        "meta": {
+          "name": "Sort",
+          "showingComment": false,
+          "comment": {
+            "markdown": {
+              "text": {
+                "text": "",
+                "syntax": "markdown",
+                "size": {
+                  "width": "100%",
+                  "height": "100%"
+                }
+              },
+              "size": {
+                "width": null,
+                "height": 160
+              },
+              "view": "edit"
+            },
+            "editor": {
+              "collapsed": true
+            }
+          }
+        },
+        "entryVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "inMemoryCapacity": {
+          "widgetType": "expression/number",
+          "widgetData": {
+            "text": "100_000"
+          },
+          "code": "100_000"
+        },
+        "tmpFolder": {
+          "widgetType": "expression/local-file",
+          "widgetData": {
+            "interpolation": true,
+            "text": "",
+            "dialogIntent": "openFolder"
+          },
+          "code": "''"
+        },
+        "sortOrders": {
+          "sortOrders": {
+            "list": [
+              {
+                "subject": {
+                  "widgetType": "expression/field-value-ref",
+                  "widgetData": {
+                    "fieldSelect": {
+                      "value": {
+                        "gate": "in",
+                        "name": "Beguenstigter_Zahlungspflichtiger"
+                      }
+                    }
+                  },
+                  "code": "::in.Beguenstigter_Zahlungspflichtiger"
+                },
+                "comparator": {
+                  "widgetType": "expression/compare-string",
+                  "widgetData": {
+                    "caseSensitive": {
+                      "widgetType": "expression/checkbox-boolean",
+                      "widgetData": {
+                        "value": true
+                      },
+                      "code": "true"
+                    },
+                    "nilOrder": {
+                      "widgetType": "expression/select",
+                      "widgetData": {
+                        "family": "expression/select/orderFirstLast",
+                        "value": "first"
+                      },
+                      "code": "'first'"
+                    },
+                    "editor": {
+                      "collapsed": true
+                    },
+                    "model": {}
+                  },
+                  "code": "let {\n  make_comparator: (boolean caseSensitive, string nilOrder) -> function via {:class 'com.twineworks.tweakstreet.library.sorting.Comparators$string_comparator'};\n}\nmake_comparator(true, 'first')\n"
+                },
+                "direction": {
+                  "widgetType": "expression/select",
+                  "widgetData": {
+                    "family": "expression/select/orderDirection",
+                    "value": "ascending"
+                  },
+                  "code": "'ascending'"
+                }
+              },
+              {
+                "subject": {
+                  "widgetType": "expression/field-value-ref",
+                  "widgetData": {
+                    "fieldSelect": {
+                      "value": {
+                        "gate": "in",
+                        "name": "total"
+                      }
+                    }
+                  },
+                  "code": "::in.total"
+                },
+                "comparator": {
+                  "widgetType": "expression/compare-number",
+                  "widgetData": {
+                    "nonNumeric": {
+                      "widgetType": "expression/select",
+                      "widgetData": {
+                        "family": "expression/select/orderNonNumeric",
+                        "value": "nil_NaN_num"
+                      },
+                      "code": "'nil_NaN_num'"
+                    },
+                    "editor": {
+                      "collapsed": true
+                    },
+                    "model": {}
+                  },
+                  "code": "let {\n  make_comparator: (string nonNumeric) -> function via {:class 'com.twineworks.tweakstreet.library.sorting.Comparators$number_comparator'};\n}\nmake_comparator('nil_NaN_num')\n"
+                },
+                "direction": {
+                  "widgetType": "expression/select",
+                  "widgetData": {
+                    "family": "expression/select/orderDirection",
+                    "value": "ascending"
+                  },
+                  "code": "'ascending'"
+                }
+              }
+            ]
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "editor": {
+          "showEntryVariables": false
+        },
+        "model": {}
+      },
+      "pos": {
+        "x": 778,
+        "y": 170
+      }
+    }
+  ],
+  "hops": [
+    {
+      "id": "716d11b4-8f8b-4c91-9664-0e19c40dff61",
+      "fromStep": "com.twineworks.tweakstreet.library.steps.input.mongodbfind_2b87da3c-d27f-4aa7-9b73-bfc5bd946ad8",
+      "toStep": "com.twineworks.tweakstreet.library.steps.group.groupby_d3319cbd-ad00-4dee-9d4e-8b26bb634bbd",
+      "fromGate": "out",
+      "toGate": "in",
+      "disabled": false,
+      "partitioner": {
+        "widgetType": "expression/code",
+        "widgetData": {
+          "text": ""
+        },
+        "code": "nil"
+      }
+    },
+    {
+      "id": "bbafd1ea-9775-4a6c-83b1-911525ee79c1",
+      "fromStep": "com.twineworks.tweakstreet.library.steps.group.groupby_d3319cbd-ad00-4dee-9d4e-8b26bb634bbd",
+      "toStep": "com.twineworks.tweakstreet.library.steps.sort.sort_4e1ee5b9-4eb6-4204-83aa-c9608a32c844",
+      "fromGate": "out",
+      "toGate": "in",
+      "disabled": false,
+      "partitioner": {
+        "widgetType": "expression/code",
+        "widgetData": {
+          "text": ""
+        },
+        "code": "nil"
+      }
+    }
+  ]
+}

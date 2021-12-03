@@ -1,0 +1,2241 @@
+{
+  "type": "data-flow",
+  "appVersion": "1.19.2",
+  "properties": {
+    "meta": {
+      "comment": {
+        "markdown": {
+          "text": {
+            "text": "",
+            "syntax": "markdown",
+            "size": {
+              "width": "100%",
+              "height": "100%"
+            }
+          },
+          "size": {
+            "width": null,
+            "height": 160
+          },
+          "view": "edit"
+        },
+        "editor": {
+          "collapsed": true
+        }
+      },
+      "showingComment": true
+    },
+    "editor": {
+      "showParameters": true,
+      "showVariables": true,
+      "showServices": true,
+      "dialogWidth": "wide"
+    },
+    "imports": {
+      "code": "# import the standard library\nimport core, data, strings, time, math, fun, locale, regex, bin, decimals from 'std';\n",
+      "size": {
+        "width": 0,
+        "height": 102
+      },
+      "editor": {
+        "collapsed": false
+      }
+    },
+    "parameters": {
+      "parameters": {
+        "list": []
+      },
+      "editor": {
+        "collapsed": false
+      }
+    },
+    "variables": {
+      "variables": {
+        "list": [
+          {
+            "name": "kategorien",
+            "type": "any",
+            "value": {
+              "widgetType": "expression/code",
+              "widgetData": {
+                "text": "{\n  :Lebensmittel {\n    :Essen {:Kategorie 'Lebensmittel', :Subkategorie 'Essen'}\n  },\n  :SteuernAbgaben {\n    :Auto {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Auto'}\n  },\n  :Mobilitaet {\n    :Tanken {:Kategorie 'Mobilitaet', :Subkategorie 'Tanken'}\n  },\n  :Wohnen {\n    :Baumarkt {:Kategorie 'Wohnen', :Subkategorie 'Baumarkt'}\n  },\n  :Shopping {\n    :Online {:Kategorie 'Shopping', :Subkategorie 'Online'}\n  },\n  :Shopping {\n    :Geschaeft {:Kategorie 'Shopping', :Subkategorie 'Geschaeft'}\n  }\n  \n}",
+                "size": {
+                  "width": 0,
+                  "height": 304
+                },
+                "syntax": "tweakflow"
+              },
+              "code": "{\n  :Lebensmittel {\n    :Essen {:Kategorie 'Lebensmittel', :Subkategorie 'Essen'}\n  },\n  :SteuernAbgaben {\n    :Auto {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Auto'}\n  },\n  :Mobilitaet {\n    :Tanken {:Kategorie 'Mobilitaet', :Subkategorie 'Tanken'}\n  },\n  :Wohnen {\n    :Baumarkt {:Kategorie 'Wohnen', :Subkategorie 'Baumarkt'}\n  },\n  :Shopping {\n    :Online {:Kategorie 'Shopping', :Subkategorie 'Online'}\n  },\n  :Shopping {\n    :Geschaeft {:Kategorie 'Shopping', :Subkategorie 'Geschaeft'}\n  }\n  \n}"
+            }
+          }
+        ]
+      },
+      "editor": {
+        "collapsed": false
+      }
+    },
+    "services": {
+      "services": {
+        "list": [
+          {
+            "name": "mongodb_local",
+            "type": "any",
+            "category": "mongodb",
+            "value": {
+              "widgetType": "expression/mongodb",
+              "widgetData": {
+                "type": "com.twineworks.tweakstreet.library.mongodb.generic",
+                "db": {
+                  "protocol": {
+                    "widgetType": "expression/select",
+                    "widgetData": {
+                      "family": "com.twineworks.tweakstreet.library.mongodb.generic/protocol",
+                      "value": "mongodb"
+                    },
+                    "code": "'mongodb'"
+                  },
+                  "hosts": {
+                    "widgetType": "expression/data-grid",
+                    "widgetData": {
+                      "fields": [
+                        {
+                          "id": "name",
+                          "name": "name"
+                        },
+                        {
+                          "id": "port",
+                          "name": "port"
+                        }
+                      ],
+                      "gen": {
+                        "as": "rows",
+                        "of": "dict",
+                        "meta": false
+                      },
+                      "table": {
+                        "list": [
+                          {
+                            "fields": {
+                              "name": {
+                                "widgetType": "expression/string",
+                                "widgetData": {
+                                  "interpolation": true,
+                                  "text": "localhost"
+                                },
+                                "code": "'localhost'"
+                              },
+                              "port": {
+                                "widgetType": "expression/string",
+                                "widgetData": {
+                                  "interpolation": true,
+                                  "text": "27017"
+                                },
+                                "code": "'27017'"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "code": "[{\n  :name 'localhost',\n  :port '27017'\n}]"
+                  },
+                  "username": {
+                    "widgetType": "expression/string",
+                    "widgetData": {
+                      "interpolation": true,
+                      "text": ""
+                    },
+                    "code": "''"
+                  },
+                  "password": {
+                    "widgetType": "expression/password",
+                    "widgetData": {
+                      "text": "",
+                      "encrypted": false
+                    },
+                    "code": "''"
+                  },
+                  "authDb": {
+                    "widgetType": "expression/string",
+                    "widgetData": {
+                      "interpolation": true,
+                      "text": ""
+                    },
+                    "code": "''"
+                  },
+                  "options": {
+                    "widgetType": "expression/data-grid",
+                    "widgetData": {
+                      "fields": [
+                        {
+                          "id": "name",
+                          "name": "name"
+                        },
+                        {
+                          "id": "value",
+                          "name": "value"
+                        }
+                      ],
+                      "gen": {
+                        "as": "rows",
+                        "of": "dict",
+                        "meta": false
+                      },
+                      "table": {
+                        "list": [
+                          {
+                            "fields": {
+                              "name": {
+                                "widgetType": "expression/string",
+                                "widgetData": {
+                                  "interpolation": true,
+                                  "text": "compressors"
+                                },
+                                "code": "'compressors'"
+                              },
+                              "value": {
+                                "widgetType": "expression/string",
+                                "widgetData": {
+                                  "interpolation": true,
+                                  "text": "zlib"
+                                },
+                                "code": "'zlib'"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "code": "[{\n  :name 'compressors',\n  :value 'zlib'\n}]"
+                  },
+                  "editor": {},
+                  "model": {}
+                },
+                "summary": true
+              },
+              "code": "{\n  :type 'com.twineworks.tweakstreet.library.mongodb.generic',\n  :db {\n    :protocol 'mongodb',\n    :hosts [{\n      :name 'localhost',\n      :port '27017'\n    }],\n    :username '',\n    :password '',\n    :authDb '',\n    :options [{\n      :name 'compressors',\n      :value 'zlib'\n    }]\n  }\n}"
+            }
+          }
+        ]
+      },
+      "editor": {
+        "collapsed": false
+      }
+    }
+  },
+  "steps": [
+    {
+      "id": "com.twineworks.tweakstreet.library.steps.input.csvinput_2466b722-2c8c-40ce-8378-b979de5211c7",
+      "name": "CSV Input",
+      "type": "com.twineworks.tweakstreet.library.steps.input.csvinput",
+      "instanceCount": {
+        "widgetType": "expression/number",
+        "widgetData": {
+          "text": "1"
+        },
+        "code": "1"
+      },
+      "data": {
+        "meta": {
+          "name": "CSV Input",
+          "showingComment": false,
+          "comment": {
+            "markdown": {
+              "text": {
+                "text": "",
+                "syntax": "markdown",
+                "size": {
+                  "width": "100%",
+                  "height": "100%"
+                }
+              },
+              "size": {
+                "width": null,
+                "height": 160
+              },
+              "view": "edit"
+            },
+            "editor": {
+              "collapsed": true
+            }
+          }
+        },
+        "entryVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "tabs": {},
+        "fs": {
+          "widgetType": "expression/storage-ref",
+          "widgetData": {
+            "name": ""
+          },
+          "code": "nil"
+        },
+        "file": {
+          "widgetType": "expression/code",
+          "widgetData": {
+            "text": "in.Info_Datendatei[:path]",
+            "size": {
+              "width": 0,
+              "height": 36
+            },
+            "syntax": "tweakflow"
+          },
+          "code": "in.Info_Datendatei[:path]"
+        },
+        "compression": {
+          "widgetType": "expression/select",
+          "widgetData": {
+            "family": "expression/select/compression",
+            "value": "none"
+          },
+          "code": "'none'"
+        },
+        "charset": {
+          "widgetType": "expression/charset",
+          "widgetData": {
+            "value": "windows-1258"
+          },
+          "code": "'windows-1258'"
+        },
+        "textFileContent": {
+          "text": "",
+          "fetchButton": {
+            "value": "100"
+          },
+          "size": {
+            "width": 0,
+            "height": 180
+          },
+          "editor": {
+            "collapsed": true
+          }
+        },
+        "skipLines": {
+          "widgetType": "expression/number",
+          "widgetData": {
+            "text": "0"
+          },
+          "code": "0"
+        },
+        "rowLimit": {
+          "widgetType": "expression/nil",
+          "widgetData": {},
+          "code": "nil"
+        },
+        "fieldSeparator": {
+          "widgetType": "expression/separator",
+          "widgetData": {
+            "value": "semicolon"
+          },
+          "code": "\";\""
+        },
+        "fieldEncloser": {
+          "widgetType": "expression/string",
+          "widgetData": {
+            "interpolation": true,
+            "text": "\""
+          },
+          "code": "'\"'"
+        },
+        "hasHeaderLine": {
+          "widgetType": "expression/checkbox-boolean",
+          "widgetData": {
+            "value": true
+          },
+          "code": "true"
+        },
+        "readFields": {
+          "readFields": {
+            "list": [
+              {
+                "name": "Auftragskonto",
+                "type": "string",
+                "mapping": {
+                  "widgetType": "expression/string",
+                  "widgetData": {
+                    "interpolation": true,
+                    "text": "Auftragskonto"
+                  },
+                  "code": "'Auftragskonto'"
+                },
+                "conversion": {
+                  "widgetType": "expression/nil",
+                  "widgetData": {},
+                  "code": "nil"
+                }
+              },
+              {
+                "name": "Buchungstag",
+                "type": "datetime",
+                "mapping": {
+                  "widgetType": "expression/string",
+                  "widgetData": {
+                    "interpolation": true,
+                    "text": "Buchungstag"
+                  },
+                  "code": "'Buchungstag'"
+                },
+                "conversion": {
+                  "widgetType": "expression/parse-datetime",
+                  "widgetData": {
+                    "pattern": {
+                      "widgetType": "expression/string",
+                      "widgetData": {
+                        "interpolation": true,
+                        "text": "dd.MM.uu"
+                      },
+                      "code": "'dd.MM.uu'"
+                    },
+                    "locale": {
+                      "widgetType": "expression/locale",
+                      "widgetData": {
+                        "value": "en-US"
+                      },
+                      "code": "'en-US'"
+                    },
+                    "defaultTz": {
+                      "widgetType": "expression/timezone",
+                      "widgetData": {
+                        "value": "Europe/Berlin"
+                      },
+                      "code": "'Europe/Berlin'"
+                    },
+                    "trim": {
+                      "widgetType": "expression/checkbox-boolean",
+                      "widgetData": {
+                        "value": true
+                      },
+                      "code": "true"
+                    },
+                    "nilValue": {
+                      "widgetType": "expression/string",
+                      "widgetData": {
+                        "interpolation": true,
+                        "text": ""
+                      },
+                      "code": "''"
+                    },
+                    "editor": {
+                      "collapsed": true
+                    },
+                    "model": {}
+                  },
+                  "code": "let {\n  make_parser: (string pattern, string locale, string default_tz, boolean trim, string nilValue) -> function via {:class 'com.twineworks.tweakstreet.library.conversion.Parsers$datetime_parser'};\n}\nmake_parser('dd.MM.uu', 'en-US', 'Europe/Berlin', true, '')\n"
+                }
+              },
+              {
+                "name": "Valutadatum",
+                "type": "datetime",
+                "mapping": {
+                  "widgetType": "expression/string",
+                  "widgetData": {
+                    "interpolation": true,
+                    "text": "Valutadatum"
+                  },
+                  "code": "'Valutadatum'"
+                },
+                "conversion": {
+                  "widgetType": "expression/parse-datetime",
+                  "widgetData": {
+                    "pattern": {
+                      "widgetType": "expression/string",
+                      "widgetData": {
+                        "interpolation": true,
+                        "text": "dd.MM.uu"
+                      },
+                      "code": "'dd.MM.uu'"
+                    },
+                    "locale": {
+                      "widgetType": "expression/locale",
+                      "widgetData": {
+                        "value": "en-US"
+                      },
+                      "code": "'en-US'"
+                    },
+                    "defaultTz": {
+                      "widgetType": "expression/timezone",
+                      "widgetData": {
+                        "value": "Europe/Berlin"
+                      },
+                      "code": "'Europe/Berlin'"
+                    },
+                    "trim": {
+                      "widgetType": "expression/checkbox-boolean",
+                      "widgetData": {
+                        "value": true
+                      },
+                      "code": "true"
+                    },
+                    "nilValue": {
+                      "widgetType": "expression/string",
+                      "widgetData": {
+                        "interpolation": true,
+                        "text": ""
+                      },
+                      "code": "''"
+                    },
+                    "editor": {
+                      "collapsed": true
+                    },
+                    "model": {}
+                  },
+                  "code": "let {\n  make_parser: (string pattern, string locale, string default_tz, boolean trim, string nilValue) -> function via {:class 'com.twineworks.tweakstreet.library.conversion.Parsers$datetime_parser'};\n}\nmake_parser('dd.MM.uu', 'en-US', 'Europe/Berlin', true, '')\n"
+                }
+              },
+              {
+                "name": "Buchungstext",
+                "type": "string",
+                "mapping": {
+                  "widgetType": "expression/string",
+                  "widgetData": {
+                    "interpolation": true,
+                    "text": "Buchungstext"
+                  },
+                  "code": "'Buchungstext'"
+                },
+                "conversion": {
+                  "widgetType": "expression/nil",
+                  "widgetData": {},
+                  "code": "nil"
+                }
+              },
+              {
+                "name": "Verwendungszweck",
+                "type": "string",
+                "mapping": {
+                  "widgetType": "expression/string",
+                  "widgetData": {
+                    "interpolation": true,
+                    "text": "Verwendungszweck"
+                  },
+                  "code": "'Verwendungszweck'"
+                },
+                "conversion": {
+                  "widgetType": "expression/nil",
+                  "widgetData": {},
+                  "code": "nil"
+                }
+              },
+              {
+                "name": "Beguenstigter_Zahlungspflichtiger",
+                "type": "string",
+                "mapping": {
+                  "widgetType": "expression/string",
+                  "widgetData": {
+                    "interpolation": true,
+                    "text": "Beguenstigter/Zahlungspflichtiger"
+                  },
+                  "code": "'Beguenstigter/Zahlungspflichtiger'"
+                },
+                "conversion": {
+                  "widgetType": "expression/nil",
+                  "widgetData": {},
+                  "code": "nil"
+                }
+              },
+              {
+                "name": "Kontonummer",
+                "type": "string",
+                "mapping": {
+                  "widgetType": "expression/string",
+                  "widgetData": {
+                    "interpolation": true,
+                    "text": "Kontonummer"
+                  },
+                  "code": "'Kontonummer'"
+                },
+                "conversion": {
+                  "widgetType": "expression/nil",
+                  "widgetData": {},
+                  "code": "nil"
+                }
+              },
+              {
+                "name": "BLZ",
+                "type": "string",
+                "mapping": {
+                  "widgetType": "expression/string",
+                  "widgetData": {
+                    "interpolation": true,
+                    "text": "BLZ"
+                  },
+                  "code": "'BLZ'"
+                },
+                "conversion": {
+                  "widgetType": "expression/nil",
+                  "widgetData": {},
+                  "code": "nil"
+                }
+              },
+              {
+                "name": "Betrag",
+                "type": "double",
+                "mapping": {
+                  "widgetType": "expression/string",
+                  "widgetData": {
+                    "interpolation": true,
+                    "text": "Betrag"
+                  },
+                  "code": "'Betrag'"
+                },
+                "conversion": {
+                  "widgetType": "expression/parse-number",
+                  "widgetData": {
+                    "pattern": {
+                      "widgetType": "expression/number-pattern",
+                      "widgetData": {
+                        "value": "#,##0"
+                      },
+                      "code": "'#,##0'"
+                    },
+                    "locale": {
+                      "widgetType": "expression/locale",
+                      "widgetData": {
+                        "value": "de-DE"
+                      },
+                      "code": "'de-DE'"
+                    },
+                    "trim": {
+                      "widgetType": "expression/checkbox-boolean",
+                      "widgetData": {
+                        "value": true
+                      },
+                      "code": "true"
+                    },
+                    "nilValue": {
+                      "widgetType": "expression/string",
+                      "widgetData": {
+                        "interpolation": true,
+                        "text": ""
+                      },
+                      "code": "''"
+                    },
+                    "parseDecimal": {
+                      "widgetType": "expression/checkbox-boolean",
+                      "widgetData": {
+                        "value": false
+                      },
+                      "code": "false"
+                    },
+                    "editor": {
+                      "collapsed": false
+                    },
+                    "model": {}
+                  },
+                  "code": "let {\n  make_parser: (string pattern, string locale, boolean trim, string nilValue, boolean parseDecimal) -> function via {:class 'com.twineworks.tweakstreet.library.conversion.Parsers$number_parser'};\n}\nmake_parser('#,##0', 'de-DE', true, '', false)\n"
+                }
+              },
+              {
+                "name": "Waehrung",
+                "type": "string",
+                "mapping": {
+                  "widgetType": "expression/string",
+                  "widgetData": {
+                    "interpolation": true,
+                    "text": "Waehrung"
+                  },
+                  "code": "'Waehrung'"
+                },
+                "conversion": {
+                  "widgetType": "expression/nil",
+                  "widgetData": {},
+                  "code": "nil"
+                }
+              },
+              {
+                "name": "Info",
+                "type": "string",
+                "mapping": {
+                  "widgetType": "expression/string",
+                  "widgetData": {
+                    "interpolation": true,
+                    "text": "Info"
+                  },
+                  "code": "'Info'"
+                },
+                "conversion": {
+                  "widgetType": "expression/nil",
+                  "widgetData": {},
+                  "code": "nil"
+                }
+              }
+            ]
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "resultVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "outputFields": {
+          "outputFields": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "editor": {
+          "showEntryVariables": false,
+          "showResultVariables": false,
+          "showOutputFields": false
+        },
+        "model": {}
+      },
+      "pos": {
+        "x": 362,
+        "y": 74
+      }
+    },
+    {
+      "id": "com.twineworks.tweakstreet.library.steps.map.calculator_3e9225c5-6d3f-4b6e-98bc-e6ff969652ac",
+      "name": "Calculator",
+      "type": "com.twineworks.tweakstreet.library.steps.map.calculator",
+      "instanceCount": {
+        "widgetType": "expression/number",
+        "widgetData": {
+          "text": "1"
+        },
+        "code": "1"
+      },
+      "data": {
+        "meta": {
+          "name": "Calculator",
+          "showingComment": false,
+          "comment": {
+            "markdown": {
+              "text": {
+                "text": "",
+                "syntax": "markdown",
+                "size": {
+                  "width": "100%",
+                  "height": "100%"
+                }
+              },
+              "size": {
+                "width": null,
+                "height": 160
+              },
+              "view": "edit"
+            },
+            "editor": {
+              "collapsed": true
+            }
+          }
+        },
+        "entryVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "outputFields": {
+          "outputFields": {
+            "list": [
+              {
+                "name": "Dateiname",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "in.Info_Datendatei[:name]",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "in.Info_Datendatei[:name]"
+                }
+              },
+              {
+                "name": "Typ",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "if in.Betrag < 0 \nthen\n  'Abbuchung'\nelse\n  'Gutschrift'",
+                    "size": {
+                      "width": 0,
+                      "height": 117
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "if in.Betrag < 0 \nthen\n  'Abbuchung'\nelse\n  'Gutschrift'"
+                }
+              },
+              {
+                "name": "Beguenstigter_Zahlungspflichtiger_Alternative",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "if in.Beguenstigter_Zahlungspflichtiger_Alternative \nthen\n  in.Beguenstigter_Zahlungspflichtiger_Alternative\nelse\n  in.Beguenstigter_Zahlungspflichtiger",
+                    "size": {
+                      "width": 0,
+                      "height": 115
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "if in.Beguenstigter_Zahlungspflichtiger_Alternative \nthen\n  in.Beguenstigter_Zahlungspflichtiger_Alternative\nelse\n  in.Beguenstigter_Zahlungspflichtiger"
+                }
+              }
+            ]
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "editor": {
+          "showEntryVariables": true,
+          "showOutputFields": true
+        },
+        "model": {}
+      },
+      "pos": {
+        "x": 714,
+        "y": 74
+      }
+    },
+    {
+      "id": "com.twineworks.tweakstreet.library.steps.join.conditionjoin_db76ef8e-54a6-4391-83b3-ceb362c3f245",
+      "name": "Join on Condition",
+      "type": "com.twineworks.tweakstreet.library.steps.join.conditionjoin",
+      "instanceCount": {
+        "widgetType": "expression/number",
+        "widgetData": {
+          "text": "1"
+        },
+        "code": "1"
+      },
+      "data": {
+        "meta": {
+          "name": "Join on Condition",
+          "showingComment": false,
+          "comment": {
+            "markdown": {
+              "text": {
+                "text": "",
+                "syntax": "markdown",
+                "size": {
+                  "width": "100%",
+                  "height": "100%"
+                }
+              },
+              "size": {
+                "width": null,
+                "height": 160
+              },
+              "view": "edit"
+            },
+            "editor": {
+              "collapsed": true
+            }
+          }
+        },
+        "tabs": {},
+        "method": {
+          "widgetType": "expression/select",
+          "widgetData": {
+            "family": "expression/select/joinMethod",
+            "value": "stream_left"
+          },
+          "code": "'stream_left'"
+        },
+        "inMemoryCapacity": {
+          "widgetType": "expression/number",
+          "widgetData": {
+            "text": "1_000_000"
+          },
+          "code": "1_000_000"
+        },
+        "tmpFolder": {
+          "widgetType": "expression/local-file",
+          "widgetData": {
+            "interpolation": true,
+            "text": "",
+            "dialogIntent": "openFolder"
+          },
+          "code": "''"
+        },
+        "condition": {
+          "widgetType": "expression/lib-strings-matches",
+          "widgetData": {
+            "pattern": {
+              "widgetType": "expression/code",
+              "widgetData": {
+                "text": "'.*' .. right.Suchtext .. '.*'",
+                "size": {
+                  "width": 0,
+                  "height": 36
+                },
+                "syntax": "tweakflow"
+              },
+              "code": "'.*' .. right.Suchtext .. '.*'"
+            },
+            "subject": {
+              "widgetType": "expression/string",
+              "widgetData": {
+                "interpolation": true,
+                "text": "${left.Beguenstigter_Zahlungspflichtiger}"
+              },
+              "code": "let {\n  string interpolation_0: left.Beguenstigter_Zahlungspflichtiger;\n}\ninterpolation_0"
+            },
+            "editor": {
+              "collapsed": false
+            },
+            "model": {
+              "isCall": true,
+              "applied": {
+                "pattern": true
+              }
+            }
+          },
+          "code": "((string subject, string pattern) -> boolean via {:class 'com.twineworks.tweakstreet.library.strings.Strings$matches'})(let {\n  string interpolation_0: left.Beguenstigter_Zahlungspflichtiger;\n}\ninterpolation_0, '.*' .. right.Suchtext .. '.*')"
+        },
+        "mode": {
+          "widgetType": "expression/select",
+          "widgetData": {
+            "family": "expression/select/joinMode",
+            "value": "left_outer"
+          },
+          "code": "'left_outer'"
+        },
+        "resultRowMode": {
+          "value": "left_right"
+        },
+        "leftFieldsPrefix": {
+          "value": ""
+        },
+        "rightFieldsPrefix": {
+          "value": ""
+        },
+        "entryVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "resultVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "outputFields": {
+          "outputFields": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "editor": {
+          "showEntryVariables": true,
+          "showResultVariables": false,
+          "showOutputFields": false
+        },
+        "model": {}
+      },
+      "pos": {
+        "x": 554,
+        "y": 74
+      }
+    },
+    {
+      "id": "com.twineworks.tweakstreet.library.steps.input.csvinput_10c16c96-5e6c-456b-9982-63588556eabe",
+      "name": "CSV Input: Ersetzungen Beguestigter/Zahlungspflichtiger",
+      "type": "com.twineworks.tweakstreet.library.steps.input.csvinput",
+      "instanceCount": {
+        "widgetType": "expression/number",
+        "widgetData": {
+          "text": "1"
+        },
+        "code": "1"
+      },
+      "data": {
+        "meta": {
+          "name": "CSV Input: Ersetzungen Beguestigter/Zahlungspflichtiger",
+          "showingComment": false,
+          "comment": {
+            "markdown": {
+              "text": {
+                "text": "",
+                "syntax": "markdown",
+                "size": {
+                  "width": "100%",
+                  "height": "100%"
+                }
+              },
+              "size": {
+                "width": null,
+                "height": 160
+              },
+              "view": "edit"
+            },
+            "editor": {
+              "collapsed": true
+            }
+          }
+        },
+        "entryVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "tabs": {},
+        "fs": {
+          "widgetType": "expression/storage-ref",
+          "widgetData": {
+            "name": ""
+          },
+          "code": "nil"
+        },
+        "file": {
+          "widgetType": "expression/local-file",
+          "widgetData": {
+            "interpolation": true,
+            "text": "beguenstigter_zahlungspflichtiger_alternative.csv",
+            "dialogIntent": "openFile"
+          },
+          "code": "'beguenstigter_zahlungspflichtiger_alternative.csv'"
+        },
+        "compression": {
+          "widgetType": "expression/select",
+          "widgetData": {
+            "family": "expression/select/compression",
+            "value": "none"
+          },
+          "code": "'none'"
+        },
+        "charset": {
+          "widgetType": "expression/charset",
+          "widgetData": {
+            "value": "windows-1258"
+          },
+          "code": "'windows-1258'"
+        },
+        "textFileContent": {
+          "text": "",
+          "fetchButton": {
+            "value": "100"
+          },
+          "size": {
+            "width": 0,
+            "height": 180
+          },
+          "editor": {
+            "collapsed": true
+          }
+        },
+        "skipLines": {
+          "widgetType": "expression/number",
+          "widgetData": {
+            "text": "0"
+          },
+          "code": "0"
+        },
+        "rowLimit": {
+          "widgetType": "expression/nil",
+          "widgetData": {},
+          "code": "nil"
+        },
+        "fieldSeparator": {
+          "widgetType": "expression/separator",
+          "widgetData": {
+            "value": "semicolon"
+          },
+          "code": "\";\""
+        },
+        "fieldEncloser": {
+          "widgetType": "expression/string",
+          "widgetData": {
+            "interpolation": true,
+            "text": "\""
+          },
+          "code": "'\"'"
+        },
+        "hasHeaderLine": {
+          "widgetType": "expression/checkbox-boolean",
+          "widgetData": {
+            "value": true
+          },
+          "code": "true"
+        },
+        "readFields": {
+          "readFields": {
+            "list": [
+              {
+                "name": "Suchtext",
+                "type": "string",
+                "mapping": {
+                  "widgetType": "expression/string",
+                  "widgetData": {
+                    "interpolation": true,
+                    "text": "Suchtext"
+                  },
+                  "code": "'Suchtext'"
+                },
+                "conversion": {
+                  "widgetType": "expression/nil",
+                  "widgetData": {},
+                  "code": "nil"
+                }
+              },
+              {
+                "name": "Beguenstigter_Zahlungspflichtiger_Alternative",
+                "type": "string",
+                "mapping": {
+                  "widgetType": "expression/string",
+                  "widgetData": {
+                    "interpolation": true,
+                    "text": "Beguenstigter_Zahlungspflichtiger_Alternative"
+                  },
+                  "code": "'Beguenstigter_Zahlungspflichtiger_Alternative'"
+                },
+                "conversion": {
+                  "widgetType": "expression/nil",
+                  "widgetData": {},
+                  "code": "nil"
+                }
+              }
+            ]
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "resultVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "outputFields": {
+          "outputFields": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "editor": {
+          "showEntryVariables": false,
+          "showResultVariables": false,
+          "showOutputFields": false
+        },
+        "model": {}
+      },
+      "pos": {
+        "x": 554,
+        "y": 266
+      }
+    },
+    {
+      "id": "com.twineworks.tweakstreet.library.steps.map.mongodbinsertupdate_a7bc7e28-5d63-44f2-a08d-4245d366e7e1",
+      "name": "MongoDB Update or Replace",
+      "type": "com.twineworks.tweakstreet.library.steps.map.mongodbinsertupdate",
+      "instanceCount": {
+        "widgetType": "expression/number",
+        "widgetData": {
+          "text": "1"
+        },
+        "code": "1"
+      },
+      "data": {
+        "meta": {
+          "name": "MongoDB Update or Replace",
+          "showingComment": false,
+          "comment": {
+            "markdown": {
+              "text": {
+                "text": "",
+                "syntax": "markdown",
+                "size": {
+                  "width": "100%",
+                  "height": "100%"
+                }
+              },
+              "size": {
+                "width": null,
+                "height": 160
+              },
+              "view": "edit"
+            },
+            "editor": {
+              "collapsed": true
+            }
+          }
+        },
+        "entryVariables": {
+          "variables": {
+            "list": [
+              {
+                "name": "key_fields",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "data.select(row,\n  [\n    :Auftragskonto, \n    :Buchungstag, \n    :Valutadatum,\n    :Buchungstext,\n    :Verwendungszweck,\n    :Beguenstigter_Zahlungspflichtiger,\n    :Kontonummer,\n    :Betrag\n  ]\n)\n",
+                    "size": {
+                      "width": 0,
+                      "height": 253
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "data.select(row,\n  [\n    :Auftragskonto, \n    :Buchungstag, \n    :Valutadatum,\n    :Buchungstext,\n    :Verwendungszweck,\n    :Beguenstigter_Zahlungspflichtiger,\n    :Kontonummer,\n    :Betrag\n  ]\n)"
+                }
+              },
+              {
+                "name": "key_values",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "data.values(key_fields)",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "data.values(key_fields)"
+                }
+              },
+              {
+                "name": "key",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "core.hash(strings.join(key_values,\"--\"))",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "core.hash(strings.join(key_values,\"--\"))"
+                }
+              }
+            ]
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "tabs": {},
+        "connection": {
+          "widgetType": "expression/mongodb-ref",
+          "widgetData": {
+            "name": "mongodb_local"
+          },
+          "code": "::flow.services.mongodb_local"
+        },
+        "database": {
+          "widgetType": "expression/mongodb-database",
+          "widgetData": {
+            "interpolation": true,
+            "text": "sparkasse"
+          },
+          "code": "'sparkasse'"
+        },
+        "collection": {
+          "widgetType": "expression/mongodb-collection",
+          "widgetData": {
+            "interpolation": true,
+            "text": "transaktionen"
+          },
+          "code": "'transaktionen'"
+        },
+        "operation": {
+          "widgetType": "expression/select",
+          "widgetData": {
+            "family": "com.twineworks.tweakstreet.library.steps.map.mongodbinsertupdate/operation",
+            "value": "update_one"
+          },
+          "code": "'update_one'"
+        },
+        "filter": {
+          "widgetType": "expression/bson",
+          "widgetData": {
+            "table": {
+              "list": [
+                {
+                  "key": {
+                    "widgetType": "expression/string",
+                    "widgetData": {
+                      "interpolation": true,
+                      "text": "_id"
+                    },
+                    "code": "'_id'"
+                  },
+                  "value": {
+                    "widgetType": "expression/code",
+                    "widgetData": {
+                      "text": "entry_vars.key",
+                      "size": {
+                        "width": 0,
+                        "height": 36
+                      },
+                      "syntax": "tweakflow"
+                    },
+                    "code": "entry_vars.key"
+                  }
+                }
+              ]
+            }
+          },
+          "code": "{:__bson [\n  ['_id', entry_vars.key]\n]}"
+        },
+        "update": {
+          "widgetType": "expression/bson",
+          "widgetData": {
+            "table": {
+              "list": [
+                {
+                  "key": {
+                    "widgetType": "expression/string",
+                    "widgetData": {
+                      "interpolation": true,
+                      "text": "$set"
+                    },
+                    "code": "'$set'"
+                  },
+                  "value": {
+                    "widgetType": "expression/row",
+                    "widgetData": {},
+                    "code": "::row"
+                  }
+                }
+              ]
+            }
+          },
+          "code": "{:__bson [\n  ['$set', ::row]\n]}"
+        },
+        "arrayFilters": {
+          "widgetType": "expression/text",
+          "widgetData": {
+            "text": "",
+            "size": {
+              "width": 0,
+              "height": 60
+            },
+            "syntax": "javascript",
+            "lineSeparator": "\n",
+            "interpolation": false
+          },
+          "code": "''"
+        },
+        "upsert": {
+          "widgetType": "expression/checkbox-boolean",
+          "widgetData": {
+            "value": true
+          },
+          "code": "true"
+        },
+        "skipDocValidation": {
+          "widgetType": "expression/checkbox-boolean",
+          "widgetData": {
+            "value": false
+          },
+          "code": "false"
+        },
+        "resultVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "outputFields": {
+          "outputFields": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "editor": {
+          "showEntryVariables": true,
+          "showResultVariables": false,
+          "showOutputFields": false
+        },
+        "model": {}
+      },
+      "pos": {
+        "x": 1162,
+        "y": 266
+      }
+    },
+    {
+      "id": "com.twineworks.tweakstreet.library.steps.map.pickfields_2768a542-1c91-4625-8db2-7e501d4edd0b",
+      "name": "Pick Fields",
+      "type": "com.twineworks.tweakstreet.library.steps.map.pickfields",
+      "instanceCount": {
+        "widgetType": "expression/number",
+        "widgetData": {
+          "text": "1"
+        },
+        "code": "1"
+      },
+      "data": {
+        "meta": {
+          "name": "Pick Fields",
+          "showingComment": false,
+          "comment": {
+            "markdown": {
+              "text": {
+                "text": "",
+                "syntax": "markdown",
+                "size": {
+                  "width": "100%",
+                  "height": "100%"
+                }
+              },
+              "size": {
+                "width": null,
+                "height": 160
+              },
+              "view": "edit"
+            },
+            "editor": {
+              "collapsed": true
+            }
+          }
+        },
+        "mode": {
+          "value": "whitelist"
+        },
+        "fieldRefs": {
+          "fieldRefs": {
+            "list": [
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "Dateiname"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "Auftragskonto"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "Buchungstag"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "Valutadatum"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "Buchungstext"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "Verwendungszweck"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "Kategorie"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "Beguenstigter_Zahlungspflichtiger"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "Beguenstigter_Zahlungspflichtiger_Alternative"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "Kontonummer"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "BLZ"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "Typ"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "Betrag"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "Waehrung"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
+                    "name": "Info"
+                  }
+                }
+              }
+            ]
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "editor": {},
+        "model": {}
+      },
+      "pos": {
+        "x": 1162,
+        "y": 74
+      }
+    },
+    {
+      "id": "com.twineworks.tweakstreet.library.steps.input.getfiles_589a6caf-a205-41b4-96a5-abf8c6156502",
+      "name": "Get Files: Transaktionsdateien",
+      "type": "com.twineworks.tweakstreet.library.steps.input.getfiles",
+      "instanceCount": {
+        "widgetType": "expression/number",
+        "widgetData": {
+          "text": "1"
+        },
+        "code": "1"
+      },
+      "data": {
+        "meta": {
+          "name": "Get Files: Transaktionsdateien",
+          "showingComment": false,
+          "comment": {
+            "markdown": {
+              "text": {
+                "text": "",
+                "syntax": "markdown",
+                "size": {
+                  "width": "100%",
+                  "height": "100%"
+                }
+              },
+              "size": {
+                "width": null,
+                "height": 160
+              },
+              "view": "edit"
+            },
+            "editor": {
+              "collapsed": true
+            }
+          }
+        },
+        "entryVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "fs": {
+          "widgetType": "expression/storage-ref",
+          "widgetData": {
+            "name": ""
+          },
+          "code": "nil"
+        },
+        "path": {
+          "widgetType": "expression/local-file",
+          "widgetData": {
+            "interpolation": true,
+            "text": "./daten",
+            "dialogIntent": "openFolder"
+          },
+          "code": "'./daten'"
+        },
+        "maxDepth": {
+          "widgetType": "expression/nil",
+          "widgetData": {},
+          "code": "nil"
+        },
+        "pattern": {
+          "widgetType": "expression/string",
+          "widgetData": {
+            "interpolation": true,
+            "text": ".*"
+          },
+          "code": "'.*'"
+        },
+        "filter": {
+          "widgetType": "expression/code",
+          "widgetData": {
+            "text": "",
+            "size": {
+              "width": 0,
+              "height": 95
+            },
+            "syntax": "tweakflow"
+          },
+          "code": "nil"
+        },
+        "matchFiles": {
+          "widgetType": "expression/checkbox-boolean",
+          "widgetData": {
+            "value": true
+          },
+          "code": "true"
+        },
+        "matchFolders": {
+          "widgetType": "expression/checkbox-boolean",
+          "widgetData": {
+            "value": false
+          },
+          "code": "false"
+        },
+        "onError": {
+          "widgetType": "expression/select",
+          "widgetData": {
+            "family": "com.twineworks.tweakstreet.library.steps.input.getfiles/onError",
+            "value": "warn"
+          },
+          "code": "'warn'"
+        },
+        "resultVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "outputFields": {
+          "outputFields": {
+            "list": [
+              {
+                "name": "Info_Datendatei",
+                "type": "dict",
+                "value": {
+                  "widgetType": "expression/result-ref",
+                  "widgetData": {
+                    "value": "::results.info"
+                  },
+                  "code": "::results.info"
+                }
+              }
+            ]
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "editor": {
+          "showEntryVariables": false,
+          "showResultVariables": false,
+          "showOutputFields": true
+        },
+        "model": {}
+      },
+      "pos": {
+        "x": 138,
+        "y": 74
+      }
+    },
+    {
+      "id": "com.twineworks.tweakstreet.library.steps.map.mapper_ec67c697-f6bd-4c41-86fa-6a81547eb106",
+      "name": "Value Mapper: Kategorie/Subkategorie",
+      "type": "com.twineworks.tweakstreet.library.steps.map.mapper",
+      "instanceCount": {
+        "widgetType": "expression/number",
+        "widgetData": {
+          "text": "1"
+        },
+        "code": "1"
+      },
+      "data": {
+        "meta": {
+          "name": "Value Mapper: Kategorie/Subkategorie",
+          "showingComment": false,
+          "comment": {
+            "markdown": {
+              "text": {
+                "text": "",
+                "syntax": "markdown",
+                "size": {
+                  "width": "100%",
+                  "height": "100%"
+                }
+              },
+              "size": {
+                "width": null,
+                "height": 160
+              },
+              "view": "edit"
+            },
+            "editor": {
+              "collapsed": true
+            }
+          }
+        },
+        "entryVariables": {
+          "variables": {
+            "list": [
+              {
+                "name": "enthaelt",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "(x,y) -> data.find(x, (x) -> strings.index_of(y,x)>-1)!=nil",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "(x,y) -> data.find(x, (x) -> strings.index_of(y,x)>-1)!=nil"
+                }
+              },
+              {
+                "name": "lebensmittel_essen",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "[\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\"]",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "[\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\"]"
+                }
+              },
+              {
+                "name": "shopping_online",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "['AMZN', 'Amazon']",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "['AMZN', 'Amazon']"
+                }
+              },
+              {
+                "name": "shopping_geschaeft",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "[\"SCHMIDT\"]",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "[\"SCHMIDT\"]"
+                }
+              },
+              {
+                "name": "steuernAbgaben_auto",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "['DEKRA','Dekra']",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "['DEKRA','Dekra']"
+                }
+              },
+              {
+                "name": "mobilitaet_tanken",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "['Tankstelle']",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "['Tankstelle']"
+                }
+              },
+              {
+                "name": "wohnen_baumarkt",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "['BAUMARKT', 'BAUZENTRUM']",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "['BAUMARKT', 'BAUZENTRUM']"
+                }
+              }
+            ]
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "input": {
+          "widgetType": "expression/field-value-ref",
+          "widgetData": {
+            "fieldSelect": {
+              "value": {
+                "gate": "in",
+                "name": "Verwendungszweck"
+              }
+            }
+          },
+          "code": "::in.Verwendungszweck"
+        },
+        "mapping": {
+          "widgetType": "expression/data-grid",
+          "widgetData": {
+            "fields": [
+              {
+                "id": "condition",
+                "name": "condition"
+              },
+              {
+                "id": "value",
+                "name": "value"
+              }
+            ],
+            "gen": {
+              "as": "rows",
+              "of": "dict",
+              "meta": false
+            },
+            "table": {
+              "list": [
+                {
+                  "fields": {
+                    "condition": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "(input) -> vars.enthaelt(vars.lebensmittel_essen,input)",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "(input) -> vars.enthaelt(vars.lebensmittel_essen,input)"
+                    },
+                    "value": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "flow.vars.kategorien[:Lebensmittel,:Essen]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "flow.vars.kategorien[:Lebensmittel,:Essen]"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "condition": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "(input) -> vars.enthaelt(vars.shopping_online,input)",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "(input) -> vars.enthaelt(vars.shopping_online,input)"
+                    },
+                    "value": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "flow.vars.kategorien[:Shopping,:Online]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "flow.vars.kategorien[:Shopping,:Online]"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "condition": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "(input) -> vars.enthaelt(vars.shopping_geschaeft,input)",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "(input) -> vars.enthaelt(vars.shopping_geschaeft,input)"
+                    },
+                    "value": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "flow.vars.kategorien[:Shopping,:Geschaeft]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "flow.vars.kategorien[:Shopping,:Geschaeft]"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "condition": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "(input) -> vars.enthaelt(vars.steuernAbgaben_auto,input)",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "(input) -> vars.enthaelt(vars.steuernAbgaben_auto,input)"
+                    },
+                    "value": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "flow.vars.kategorien[:SteuernAbgaben,:Auto]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "flow.vars.kategorien[:SteuernAbgaben,:Auto]"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "condition": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "(input) -> vars.enthaelt(vars.mobilitaet_tanken,input)",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "(input) -> vars.enthaelt(vars.mobilitaet_tanken,input)"
+                    },
+                    "value": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "flow.vars.kategorien[:Mobilitaet,:Tanken]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "flow.vars.kategorien[:Mobilitaet,:Tanken]"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "condition": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "(input) -> vars.enthaelt(vars.wohnen_baumarkt,input)",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "(input) -> vars.enthaelt(vars.wohnen_baumarkt,input)"
+                    },
+                    "value": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "flow.vars.kategorien[:Wohnen,:Baumarkt]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "flow.vars.kategorien[:Wohnen,:Baumarkt]"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "code": "[{\n  :condition (input) -> vars.enthaelt(vars.lebensmittel_essen,input),\n  :value flow.vars.kategorien[:Lebensmittel,:Essen]\n}, {\n  :condition (input) -> vars.enthaelt(vars.shopping_online,input),\n  :value flow.vars.kategorien[:Shopping,:Online]\n}, {\n  :condition (input) -> vars.enthaelt(vars.shopping_geschaeft,input),\n  :value flow.vars.kategorien[:Shopping,:Geschaeft]\n}, {\n  :condition (input) -> vars.enthaelt(vars.steuernAbgaben_auto,input),\n  :value flow.vars.kategorien[:SteuernAbgaben,:Auto]\n}, {\n  :condition (input) -> vars.enthaelt(vars.mobilitaet_tanken,input),\n  :value flow.vars.kategorien[:Mobilitaet,:Tanken]\n}, {\n  :condition (input) -> vars.enthaelt(vars.wohnen_baumarkt,input),\n  :value flow.vars.kategorien[:Wohnen,:Baumarkt]\n}]"
+        },
+        "defaultValue": {
+          "widgetType": "expression/code",
+          "widgetData": {
+            "text": "{:Kategorie 'undefiniert',:Subkategorie 'undefiniert'}",
+            "size": {
+              "width": 0,
+              "height": 36
+            },
+            "syntax": "tweakflow"
+          },
+          "code": "{:Kategorie 'undefiniert',:Subkategorie 'undefiniert'}"
+        },
+        "resultVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "outputFields": {
+          "outputFields": {
+            "list": [
+              {
+                "name": "Kategorie",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/result-ref",
+                  "widgetData": {
+                    "value": "::results.mapped"
+                  },
+                  "code": "::results.mapped"
+                }
+              }
+            ]
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "editor": {
+          "showEntryVariables": true,
+          "showResultVariables": false,
+          "showOutputFields": true,
+          "dialogWidth": "wide"
+        },
+        "model": {}
+      },
+      "pos": {
+        "x": 938,
+        "y": 74
+      }
+    }
+  ],
+  "hops": [
+    {
+      "id": "60da8342-8b98-468b-a69b-43ec6ed0d9c4",
+      "fromStep": "com.twineworks.tweakstreet.library.steps.input.csvinput_2466b722-2c8c-40ce-8378-b979de5211c7",
+      "toStep": "com.twineworks.tweakstreet.library.steps.join.conditionjoin_db76ef8e-54a6-4391-83b3-ceb362c3f245",
+      "fromGate": "out",
+      "toGate": "left",
+      "disabled": false,
+      "partitioner": {
+        "widgetType": "expression/code",
+        "widgetData": {
+          "text": ""
+        },
+        "code": "nil"
+      }
+    },
+    {
+      "id": "72c6926d-8864-4e84-a066-20daee73c160",
+      "fromStep": "com.twineworks.tweakstreet.library.steps.join.conditionjoin_db76ef8e-54a6-4391-83b3-ceb362c3f245",
+      "toStep": "com.twineworks.tweakstreet.library.steps.map.calculator_3e9225c5-6d3f-4b6e-98bc-e6ff969652ac",
+      "fromGate": "out",
+      "toGate": "in",
+      "disabled": false,
+      "partitioner": {
+        "widgetType": "expression/code",
+        "widgetData": {
+          "text": ""
+        },
+        "code": "nil"
+      }
+    },
+    {
+      "id": "12ee5d60-581f-4f75-b0a5-b43ed8782b6e",
+      "fromStep": "com.twineworks.tweakstreet.library.steps.input.csvinput_10c16c96-5e6c-456b-9982-63588556eabe",
+      "toStep": "com.twineworks.tweakstreet.library.steps.join.conditionjoin_db76ef8e-54a6-4391-83b3-ceb362c3f245",
+      "fromGate": "out",
+      "toGate": "right",
+      "disabled": false,
+      "partitioner": {
+        "widgetType": "expression/code",
+        "widgetData": {
+          "text": ""
+        },
+        "code": "nil"
+      }
+    },
+    {
+      "id": "613764bc-3e6d-4177-b9b9-56e8dd448cce",
+      "fromStep": "com.twineworks.tweakstreet.library.steps.map.pickfields_2768a542-1c91-4625-8db2-7e501d4edd0b",
+      "toStep": "com.twineworks.tweakstreet.library.steps.map.mongodbinsertupdate_a7bc7e28-5d63-44f2-a08d-4245d366e7e1",
+      "fromGate": "out",
+      "toGate": "in",
+      "disabled": false,
+      "partitioner": {
+        "widgetType": "expression/code",
+        "widgetData": {
+          "text": ""
+        },
+        "code": "nil"
+      }
+    },
+    {
+      "id": "8ab93934-9e0c-4d86-8967-d1c5c8498e3b",
+      "fromStep": "com.twineworks.tweakstreet.library.steps.input.getfiles_589a6caf-a205-41b4-96a5-abf8c6156502",
+      "toStep": "com.twineworks.tweakstreet.library.steps.input.csvinput_2466b722-2c8c-40ce-8378-b979de5211c7",
+      "fromGate": "out",
+      "toGate": "in",
+      "disabled": false,
+      "partitioner": {
+        "widgetType": "expression/code",
+        "widgetData": {
+          "text": ""
+        },
+        "code": "nil"
+      }
+    },
+    {
+      "id": "b8eedfc3-42c7-4b4a-83a6-36db435d8791",
+      "fromStep": "com.twineworks.tweakstreet.library.steps.map.calculator_3e9225c5-6d3f-4b6e-98bc-e6ff969652ac",
+      "toStep": "com.twineworks.tweakstreet.library.steps.map.mapper_ec67c697-f6bd-4c41-86fa-6a81547eb106",
+      "fromGate": "out",
+      "toGate": "in",
+      "disabled": false,
+      "partitioner": {
+        "widgetType": "expression/code",
+        "widgetData": {
+          "text": ""
+        },
+        "code": "nil"
+      }
+    },
+    {
+      "id": "eeba0fec-6965-48ab-94af-57da2772fd7e",
+      "fromStep": "com.twineworks.tweakstreet.library.steps.map.mapper_ec67c697-f6bd-4c41-86fa-6a81547eb106",
+      "toStep": "com.twineworks.tweakstreet.library.steps.map.pickfields_2768a542-1c91-4625-8db2-7e501d4edd0b",
+      "fromGate": "out",
+      "toGate": "in",
+      "disabled": false,
+      "partitioner": {
+        "widgetType": "expression/code",
+        "widgetData": {
+          "text": ""
+        },
+        "code": "nil"
+      }
+    }
+  ]
+}
