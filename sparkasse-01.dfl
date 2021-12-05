@@ -1904,14 +1904,14 @@
                 "value": {
                   "widgetType": "expression/code",
                   "widgetData": {
-                    "text": "['Tankstelle',\"SHELL\"]",
+                    "text": "['Tankstelle',\"SHELL\", \"Nordoel\"]",
                     "size": {
                       "width": 0,
                       "height": 36
                     },
                     "syntax": "tweakflow"
                   },
-                  "code": "['Tankstelle',\"SHELL\"]"
+                  "code": "['Tankstelle',\"SHELL\", \"Nordoel\"]"
                 }
               },
               {
@@ -1920,14 +1920,14 @@
                 "value": {
                   "widgetType": "expression/code",
                   "widgetData": {
-                    "text": "['POLO']",
+                    "text": "['POLO',\"HUK Coburg\"]",
                     "size": {
                       "width": 0,
                       "height": 36
                     },
                     "syntax": "tweakflow"
                   },
-                  "code": "['POLO']"
+                  "code": "['POLO',\"HUK Coburg\"]"
                 }
               },
               {
