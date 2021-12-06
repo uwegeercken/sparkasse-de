@@ -58,14 +58,14 @@
             "value": {
               "widgetType": "expression/code",
               "widgetData": {
-                "text": "{\n  :Einkommen {\n    :Lohn {:Kategorie 'Einkommen', :Subkategorie 'Lohn'},\n    :Zinsen {:Kategorie 'Einkommen', :Subkategorie 'Zinsen'},\n    :Rueckerstattung {:Kategorie 'Einkommen', :Subkategorie 'Rücherstattung'},\n    :Verschiedenes {:Kategorie 'Einkommen', :Subkategorie 'Verschiedenes'}\n  },\n  :KommunikationMedien {\n    :Handy {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Handy'},\n    :Telefon {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Telefon'},\n    :Internet {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Internet'},\n    :RadioTv {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Radio/TV'},\n    :Verschiedenes {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Verschiedenes'}\n  },\n  :Gesundheit {\n    :ApothekeDrogerie {:Kategorie 'Gesundheit', :Subkategorie 'Apotheke/Drogerie'},\n    :Optiker {:Kategorie 'Gesundheit', :Subkategorie 'Optiker'},\n    :ArztKrankenhaus {:Kategorie 'Gesundheit', :Subkategorie 'Arzt/Krankenhaus'},\n    :Verschiedenes {:Kategorie 'Gesundheit', :Subkategorie 'Verschiedenes'}\n  },\n  :SteuernAbgaben {\n    :Fahrzeuge {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Fahrzeuge'},\n    :Gebuehren {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Gebuehren'},\n    :Verschiedenes {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Verschiedenes'}\n  },\n  :Mobilitaet {\n    :Fahrrad {:Kategorie 'Mobilitaet', :Subkategorie 'Fahrrad'},\n    :ZugBus {:Kategorie 'Mobilitaet', :Subkategorie 'Öffentlicher Verkehr'},\n    :Fahrzeuge {:Kategorie 'Mobilitaet', :Subkategorie 'Fahrzeuge'},\n    :Verschiedenes {:Kategorie 'Mobilitaet', :Subkategorie 'Verschiedenes'}\n  },\n  :Wohnen {\n    :Baumarkt {:Kategorie 'Wohnen', :Subkategorie 'Baumarkt'},\n    :Miete {:Kategorie 'Wohnen', :Subkategorie 'Miete'},\n    :Nebenkosten {:Kategorie 'Wohnen', :Subkategorie 'Nebenkosten'},\n    :Kredit {:Kategorie 'Wohnen', :Subkategorie 'Kredit'},\n    :Verschiedenes {:Kategorie 'Wohnen', :Subkategorie 'Verschiedenes'}\n  },\n  :Shopping {\n    :Online {:Kategorie 'Shopping', :Subkategorie 'Online'},\n    :Geschaeft {:Kategorie 'Shopping', :Subkategorie 'Geschaeft'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  },\n  :Haushalt {\n    :Lebensmittel {:Kategorie 'Haushalt', :Subkategorie 'Lebensmittel'},\n    :Haustiere {:Kategorie 'Haushalt', :Subkategorie 'Haustiere'},\n    :Bueroartikel {:Kategorie 'Haushalt', :Subkategorie 'Bueroartikel'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  },\n  :Verschiedenes {\n    :Unterhalt {:Kategorie 'Verschiedenes', :Subkategorie 'Unterhalt'},\n    :Unterstuetzung {:Kategorie 'Verschiedenes', :Subkategorie 'Unterstuetzung'},\n    :Kreditkarte {:Kategorie 'Verschiedenes', :Subkategorie 'Kreditkarte'}\n  }\n}",
+                "text": "{\n  :Einkommen {\n    :Lohn {:Kategorie 'Einkommen', :Subkategorie 'Lohn'},\n    :Zinsen {:Kategorie 'Einkommen', :Subkategorie 'Zinsen'},\n    :Rueckerstattung {:Kategorie 'Einkommen', :Subkategorie 'Rücherstattung'},\n    :Verschiedenes {:Kategorie 'Einkommen', :Subkategorie 'Verschiedenes'}\n  },\n  :KommunikationMedien {\n    :Handy {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Handy'},\n    :Telefon {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Telefon'},\n    :Internet {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Internet'},\n    :RadioTv {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Radio/TV'},\n    :Verschiedenes {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Verschiedenes'}\n  },\n  :Gesundheit {\n    :ApothekeDrogerie {:Kategorie 'Gesundheit', :Subkategorie 'Apotheke/Drogerie'},\n    :Optiker {:Kategorie 'Gesundheit', :Subkategorie 'Optiker'},\n    :ArztKrankenhaus {:Kategorie 'Gesundheit', :Subkategorie 'Arzt/Krankenhaus'},\n    :Verschiedenes {:Kategorie 'Gesundheit', :Subkategorie 'Verschiedenes'}\n  },\n  :SteuernAbgaben {\n    :Fahrzeuge {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Fahrzeuge'},\n    :Gebuehren {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Gebuehren'},\n    :Verschiedenes {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Verschiedenes'}\n  },\n  :Mobilitaet {\n    :Fahrrad {:Kategorie 'Mobilitaet', :Subkategorie 'Fahrrad'},\n    :ZugBus {:Kategorie 'Mobilitaet', :Subkategorie 'Öffentlicher Verkehr'},\n    :Fahrzeuge {:Kategorie 'Mobilitaet', :Subkategorie 'Fahrzeuge'},\n    :Verschiedenes {:Kategorie 'Mobilitaet', :Subkategorie 'Verschiedenes'}\n  },\n  :Wohnen {\n    :Baumarkt {:Kategorie 'Wohnen', :Subkategorie 'Baumarkt'},\n    :Miete {:Kategorie 'Wohnen', :Subkategorie 'Miete'},\n    :Nebenkosten {:Kategorie 'Wohnen', :Subkategorie 'Nebenkosten'},\n    :Kredit {:Kategorie 'Wohnen', :Subkategorie 'Kredit'},\n    :Verschiedenes {:Kategorie 'Wohnen', :Subkategorie 'Verschiedenes'}\n  },\n  :Shopping {\n    :Online {:Kategorie 'Shopping', :Subkategorie 'Online'},\n    :Geschaeft {:Kategorie 'Shopping', :Subkategorie 'Geschaeft'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  },\n  :Haushalt {\n    :Lebensmittel {:Kategorie 'Haushalt', :Subkategorie 'Lebensmittel'},\n    :Haustiere {:Kategorie 'Haushalt', :Subkategorie 'Haustiere'},\n    :Bueroartikel {:Kategorie 'Haushalt', :Subkategorie 'Bueroartikel'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  },\n  :Verschiedenes {\n    :Unterhalt {:Kategorie 'Verschiedenes', :Subkategorie 'Unterhalt'},\n    :Unterstuetzung {:Kategorie 'Verschiedenes', :Subkategorie 'Unterstuetzung'},\n    :Kreditkarte {:Kategorie 'Verschiedenes', :Subkategorie 'Kreditkarte'},\n    :Reisen {:Kategorie 'Verschiedenes', :Subkategorie 'Reisen'},\n  }\n}",
                 "size": {
                   "width": 0,
                   "height": 269
                 },
                 "syntax": "tweakflow"
               },
-              "code": "{\n  :Einkommen {\n    :Lohn {:Kategorie 'Einkommen', :Subkategorie 'Lohn'},\n    :Zinsen {:Kategorie 'Einkommen', :Subkategorie 'Zinsen'},\n    :Rueckerstattung {:Kategorie 'Einkommen', :Subkategorie 'Rücherstattung'},\n    :Verschiedenes {:Kategorie 'Einkommen', :Subkategorie 'Verschiedenes'}\n  },\n  :KommunikationMedien {\n    :Handy {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Handy'},\n    :Telefon {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Telefon'},\n    :Internet {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Internet'},\n    :RadioTv {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Radio/TV'},\n    :Verschiedenes {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Verschiedenes'}\n  },\n  :Gesundheit {\n    :ApothekeDrogerie {:Kategorie 'Gesundheit', :Subkategorie 'Apotheke/Drogerie'},\n    :Optiker {:Kategorie 'Gesundheit', :Subkategorie 'Optiker'},\n    :ArztKrankenhaus {:Kategorie 'Gesundheit', :Subkategorie 'Arzt/Krankenhaus'},\n    :Verschiedenes {:Kategorie 'Gesundheit', :Subkategorie 'Verschiedenes'}\n  },\n  :SteuernAbgaben {\n    :Fahrzeuge {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Fahrzeuge'},\n    :Gebuehren {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Gebuehren'},\n    :Verschiedenes {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Verschiedenes'}\n  },\n  :Mobilitaet {\n    :Fahrrad {:Kategorie 'Mobilitaet', :Subkategorie 'Fahrrad'},\n    :ZugBus {:Kategorie 'Mobilitaet', :Subkategorie 'Öffentlicher Verkehr'},\n    :Fahrzeuge {:Kategorie 'Mobilitaet', :Subkategorie 'Fahrzeuge'},\n    :Verschiedenes {:Kategorie 'Mobilitaet', :Subkategorie 'Verschiedenes'}\n  },\n  :Wohnen {\n    :Baumarkt {:Kategorie 'Wohnen', :Subkategorie 'Baumarkt'},\n    :Miete {:Kategorie 'Wohnen', :Subkategorie 'Miete'},\n    :Nebenkosten {:Kategorie 'Wohnen', :Subkategorie 'Nebenkosten'},\n    :Kredit {:Kategorie 'Wohnen', :Subkategorie 'Kredit'},\n    :Verschiedenes {:Kategorie 'Wohnen', :Subkategorie 'Verschiedenes'}\n  },\n  :Shopping {\n    :Online {:Kategorie 'Shopping', :Subkategorie 'Online'},\n    :Geschaeft {:Kategorie 'Shopping', :Subkategorie 'Geschaeft'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  },\n  :Haushalt {\n    :Lebensmittel {:Kategorie 'Haushalt', :Subkategorie 'Lebensmittel'},\n    :Haustiere {:Kategorie 'Haushalt', :Subkategorie 'Haustiere'},\n    :Bueroartikel {:Kategorie 'Haushalt', :Subkategorie 'Bueroartikel'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  },\n  :Verschiedenes {\n    :Unterhalt {:Kategorie 'Verschiedenes', :Subkategorie 'Unterhalt'},\n    :Unterstuetzung {:Kategorie 'Verschiedenes', :Subkategorie 'Unterstuetzung'},\n    :Kreditkarte {:Kategorie 'Verschiedenes', :Subkategorie 'Kreditkarte'}\n  }\n}"
+              "code": "{\n  :Einkommen {\n    :Lohn {:Kategorie 'Einkommen', :Subkategorie 'Lohn'},\n    :Zinsen {:Kategorie 'Einkommen', :Subkategorie 'Zinsen'},\n    :Rueckerstattung {:Kategorie 'Einkommen', :Subkategorie 'Rücherstattung'},\n    :Verschiedenes {:Kategorie 'Einkommen', :Subkategorie 'Verschiedenes'}\n  },\n  :KommunikationMedien {\n    :Handy {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Handy'},\n    :Telefon {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Telefon'},\n    :Internet {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Internet'},\n    :RadioTv {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Radio/TV'},\n    :Verschiedenes {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Verschiedenes'}\n  },\n  :Gesundheit {\n    :ApothekeDrogerie {:Kategorie 'Gesundheit', :Subkategorie 'Apotheke/Drogerie'},\n    :Optiker {:Kategorie 'Gesundheit', :Subkategorie 'Optiker'},\n    :ArztKrankenhaus {:Kategorie 'Gesundheit', :Subkategorie 'Arzt/Krankenhaus'},\n    :Verschiedenes {:Kategorie 'Gesundheit', :Subkategorie 'Verschiedenes'}\n  },\n  :SteuernAbgaben {\n    :Fahrzeuge {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Fahrzeuge'},\n    :Gebuehren {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Gebuehren'},\n    :Verschiedenes {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Verschiedenes'}\n  },\n  :Mobilitaet {\n    :Fahrrad {:Kategorie 'Mobilitaet', :Subkategorie 'Fahrrad'},\n    :ZugBus {:Kategorie 'Mobilitaet', :Subkategorie 'Öffentlicher Verkehr'},\n    :Fahrzeuge {:Kategorie 'Mobilitaet', :Subkategorie 'Fahrzeuge'},\n    :Verschiedenes {:Kategorie 'Mobilitaet', :Subkategorie 'Verschiedenes'}\n  },\n  :Wohnen {\n    :Baumarkt {:Kategorie 'Wohnen', :Subkategorie 'Baumarkt'},\n    :Miete {:Kategorie 'Wohnen', :Subkategorie 'Miete'},\n    :Nebenkosten {:Kategorie 'Wohnen', :Subkategorie 'Nebenkosten'},\n    :Kredit {:Kategorie 'Wohnen', :Subkategorie 'Kredit'},\n    :Verschiedenes {:Kategorie 'Wohnen', :Subkategorie 'Verschiedenes'}\n  },\n  :Shopping {\n    :Online {:Kategorie 'Shopping', :Subkategorie 'Online'},\n    :Geschaeft {:Kategorie 'Shopping', :Subkategorie 'Geschaeft'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  },\n  :Haushalt {\n    :Lebensmittel {:Kategorie 'Haushalt', :Subkategorie 'Lebensmittel'},\n    :Haustiere {:Kategorie 'Haushalt', :Subkategorie 'Haustiere'},\n    :Bueroartikel {:Kategorie 'Haushalt', :Subkategorie 'Bueroartikel'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  },\n  :Verschiedenes {\n    :Unterhalt {:Kategorie 'Verschiedenes', :Subkategorie 'Unterhalt'},\n    :Unterstuetzung {:Kategorie 'Verschiedenes', :Subkategorie 'Unterstuetzung'},\n    :Kreditkarte {:Kategorie 'Verschiedenes', :Subkategorie 'Kreditkarte'},\n    :Reisen {:Kategorie 'Verschiedenes', :Subkategorie 'Reisen'},\n  }\n}"
             }
           }
         ]
@@ -1388,7 +1388,7 @@
         "model": {}
       },
       "pos": {
-        "x": 1626,
+        "x": 1802,
         "y": 490
       }
     },
@@ -1564,7 +1564,7 @@
         "model": {}
       },
       "pos": {
-        "x": 1626,
+        "x": 1802,
         "y": 138
       }
     },
@@ -1717,7 +1717,7 @@
     },
     {
       "id": "com.twineworks.tweakstreet.library.steps.map.mapper_ec67c697-f6bd-4c41-86fa-6a81547eb106",
-      "name": "Value Mapper: Kategorie/Subkategorie",
+      "name": "Value Mapper: Beguestigter_Zahlungspflichtiger > Kategorie/Subkategorie",
       "type": "com.twineworks.tweakstreet.library.steps.map.mapper",
       "instanceCount": {
         "widgetType": "expression/number",
@@ -1728,7 +1728,7 @@
       },
       "data": {
         "meta": {
-          "name": "Value Mapper: Kategorie/Subkategorie",
+          "name": "Value Mapper: Beguestigter_Zahlungspflichtiger > Kategorie/Subkategorie",
           "showingComment": false,
           "comment": {
             "markdown": {
@@ -1792,30 +1792,30 @@
                 "value": {
                   "widgetType": "expression/code",
                   "widgetData": {
-                    "text": "[\"ALDI\", \"Nespresso\",\"FRISCHEMARKT\",\"REWE\",\"FAMILA\"]",
+                    "text": "[\"ALDI\", \"Nespresso\",\"FRISCHEMARKT\",\"REWE\",\"FAMILA\",\"Kaufland\",\"Schroeders Wasserstelle\",\"GETRAENKE ROENNFELDT\",\"Fratelli Carli\",\"MCDONALDS\",\"Hawesko GmbH\"]",
                     "size": {
                       "width": 0,
                       "height": 36
                     },
                     "syntax": "tweakflow"
                   },
-                  "code": "[\"ALDI\", \"Nespresso\",\"FRISCHEMARKT\",\"REWE\",\"FAMILA\"]"
+                  "code": "[\"ALDI\", \"Nespresso\",\"FRISCHEMARKT\",\"REWE\",\"FAMILA\",\"Kaufland\",\"Schroeders Wasserstelle\",\"GETRAENKE ROENNFELDT\",\"Fratelli Carli\",\"MCDONALDS\",\"Hawesko GmbH\"]"
                 }
               },
               {
-                "name": "gesundheit_drogerie",
+                "name": "gesundheit_apothekeDrogerie",
                 "type": "any",
                 "value": {
                   "widgetType": "expression/code",
                   "widgetData": {
-                    "text": "[\"PARFUEMERIE DOUGLAS\"]",
+                    "text": "[\"Parfuemerie Douglas\", \"PARFUEMERIE DOUGLAS\",\"APOTHEKE\"]",
                     "size": {
                       "width": 0,
                       "height": 36
                     },
                     "syntax": "tweakflow"
                   },
-                  "code": "[\"PARFUEMERIE DOUGLAS\"]"
+                  "code": "[\"Parfuemerie Douglas\", \"PARFUEMERIE DOUGLAS\",\"APOTHEKE\"]"
                 }
               },
               {
@@ -1872,14 +1872,14 @@
                 "value": {
                   "widgetType": "expression/code",
                   "widgetData": {
-                    "text": "[\"SCHMIDT\",\"DEICHMANN\",\"LIESEGANG\"]",
+                    "text": "[\"SCHMIDT\",\"DEICHMANN\",\"LIESEGANG\",\"I. D. SIEVERS\",\"Blumen Rathjens\",\"MEDIA MARKT\",\"EURONICS\"]",
                     "size": {
                       "width": 0,
                       "height": 36
                     },
                     "syntax": "tweakflow"
                   },
-                  "code": "[\"SCHMIDT\",\"DEICHMANN\",\"LIESEGANG\"]"
+                  "code": "[\"SCHMIDT\",\"DEICHMANN\",\"LIESEGANG\",\"I. D. SIEVERS\",\"Blumen Rathjens\",\"MEDIA MARKT\",\"EURONICS\"]"
                 }
               },
               {
@@ -1904,14 +1904,14 @@
                 "value": {
                   "widgetType": "expression/code",
                   "widgetData": {
-                    "text": "['Tankstelle',\"SHELL\", \"Nordoel\"]",
+                    "text": "['Tankstelle',\"SHELL\", \"Nordoel\",\"AVIA\",\"A. Willer\"]",
                     "size": {
                       "width": 0,
                       "height": 36
                     },
                     "syntax": "tweakflow"
                   },
-                  "code": "['Tankstelle',\"SHELL\", \"Nordoel\"]"
+                  "code": "['Tankstelle',\"SHELL\", \"Nordoel\",\"AVIA\",\"A. Willer\"]"
                 }
               },
               {
@@ -1920,14 +1920,30 @@
                 "value": {
                   "widgetType": "expression/code",
                   "widgetData": {
-                    "text": "['POLO',\"HUK Coburg\"]",
+                    "text": "['POLO',\"HUK Coburg\",\"Polo Motorrad\"]",
                     "size": {
                       "width": 0,
                       "height": 36
                     },
                     "syntax": "tweakflow"
                   },
-                  "code": "['POLO',\"HUK Coburg\"]"
+                  "code": "['POLO',\"HUK Coburg\",\"Polo Motorrad\"]"
+                }
+              },
+              {
+                "name": "mobilitaet_zugbus",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "['DB AUTOMAT',\"DB Vertrieb GmbH\"]",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "['DB AUTOMAT',\"DB Vertrieb GmbH\"]"
                 }
               },
               {
@@ -1992,6 +2008,38 @@
                     "syntax": "tweakflow"
                   },
                   "code": "['Unterstützung Studium']"
+                }
+              },
+              {
+                "name": "verschiedenes_kreditkarte",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "['KREDITKARTENABRECHNUNG']",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "['KREDITKARTENABRECHNUNG']"
+                }
+              },
+              {
+                "name": "verschiedenes_reisen",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "['ARBOREA Resort']",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "['ARBOREA Resort']"
                 }
               }
             ]
@@ -2093,26 +2141,26 @@
                     "condition": {
                       "widgetType": "expression/code",
                       "widgetData": {
-                        "text": "(input) -> vars.enthaelt(vars.gesundheit_drogerie,input)",
+                        "text": "(input) -> vars.enthaelt(vars.gesundheit_apothekeDrogerie,input)",
                         "size": {
                           "width": 0,
                           "height": 36
                         },
                         "syntax": "tweakflow"
                       },
-                      "code": "(input) -> vars.enthaelt(vars.gesundheit_drogerie,input)"
+                      "code": "(input) -> vars.enthaelt(vars.gesundheit_apothekeDrogerie,input)"
                     },
                     "value": {
                       "widgetType": "expression/code",
                       "widgetData": {
-                        "text": "flow.vars.kategorien[:Gesundheit,:Drogerie]",
+                        "text": "flow.vars.kategorien[:Gesundheit,:ApothekeDrogerie]",
                         "size": {
                           "width": 0,
                           "height": 36
                         },
                         "syntax": "tweakflow"
                       },
-                      "code": "flow.vars.kategorien[:Gesundheit,:Drogerie]"
+                      "code": "flow.vars.kategorien[:Gesundheit,:ApothekeDrogerie]"
                     }
                   }
                 },
@@ -2317,6 +2365,34 @@
                     "condition": {
                       "widgetType": "expression/code",
                       "widgetData": {
+                        "text": "(input) -> vars.enthaelt(vars.mobilitaet_zugbus,input)",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "(input) -> vars.enthaelt(vars.mobilitaet_zugbus,input)"
+                    },
+                    "value": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "flow.vars.kategorien[:Mobilitaet,:ZugBus]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "flow.vars.kategorien[:Mobilitaet,:ZugBus]"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "condition": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
                         "text": "(input) -> vars.enthaelt(vars.wohnen_baumarkt,input)",
                         "size": {
                           "width": 0,
@@ -2423,11 +2499,67 @@
                       "code": "flow.vars.kategorien[:Verschiedenes,:Unterstuetzung]"
                     }
                   }
+                },
+                {
+                  "fields": {
+                    "condition": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "(input) -> vars.enthaelt(vars.verschiedenes_reisen,input)",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "(input) -> vars.enthaelt(vars.verschiedenes_reisen,input)"
+                    },
+                    "value": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "flow.vars.kategorien[:Verschiedenes,:Reisen]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "flow.vars.kategorien[:Verschiedenes,:Reisen]"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "condition": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "(input) -> vars.enthaelt(vars.verschiedenes_kreditkarte,input)",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "(input) -> vars.enthaelt(vars.verschiedenes_kreditkarte,input)"
+                    },
+                    "value": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "flow.vars.kategorien[:Verschiedenes,:Kreditkarte]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "flow.vars.kategorien[:Verschiedenes,:Kreditkarte]"
+                    }
+                  }
                 }
               ]
             }
           },
-          "code": "[{\n  :condition (input) -> vars.enthaelt(vars.einkommen_lohn,input),\n  :value flow.vars.kategorien[:Einkommen,:Lohn]\n}, {\n  :condition (input) -> vars.enthaelt(vars.haushalt_lebensmittel,input),\n  :value flow.vars.kategorien[:Haushalt,:Lebensmittel]\n}, {\n  :condition (input) -> vars.enthaelt(vars.gesundheit_drogerie,input),\n  :value flow.vars.kategorien[:Gesundheit,:Drogerie]\n}, {\n  :condition (input) -> vars.enthaelt(vars.kommunikationMedien_radioTv,input),\n  :value flow.vars.kategorien[:KommunikationMedien,:RadioTv]\n}, {\n  :condition (input) -> vars.enthaelt(vars.shopping_online,input),\n  :value flow.vars.kategorien[:Shopping,:Online]\n}, {\n  :condition (input) -> vars.enthaelt(vars.shopping_geschaeft,input),\n  :value flow.vars.kategorien[:Shopping,:Geschaeft]\n}, {\n  :condition (input) -> vars.enthaelt(vars.steuernAbgaben_gebuehren,input),\n  :value flow.vars.kategorien[:SteuernAbgaben,:Gebuehren]\n}, {\n  :condition (input) -> vars.enthaelt(vars.steuernAbgaben_motorrad,input),\n  :value flow.vars.kategorien[:SteuernAbgaben,:Motorrad]\n}, {\n  :condition (input) -> vars.enthaelt(vars.mobilitaet_tanken,input),\n  :value flow.vars.kategorien[:Mobilitaet,:Tanken]\n}, {\n  :condition (input) -> vars.enthaelt(vars.mobilitaet_fahrzeuge,input),\n  :value flow.vars.kategorien[:Mobilitaet,:Fahrzeuge]\n}, {\n  :condition (input) -> vars.enthaelt(vars.wohnen_baumarkt,input),\n  :value flow.vars.kategorien[:Wohnen,:Baumarkt]\n}, {\n  :condition (input) -> vars.enthaelt(vars.wohnen_kredit,input),\n  :value flow.vars.kategorien[:Wohnen,:Kredit]\n}, {\n  :condition (input) -> vars.enthaelt(vars.verschiedenes_unterhalt,input),\n  :value flow.vars.kategorien[:Verschiedenes,:Unterhalt]\n}, {\n  :condition (input) -> vars.enthaelt(vars.verschiedenes_unterstuetzung,input),\n  :value flow.vars.kategorien[:Verschiedenes,:Unterstuetzung]\n}]"
+          "code": "[{\n  :condition (input) -> vars.enthaelt(vars.einkommen_lohn,input),\n  :value flow.vars.kategorien[:Einkommen,:Lohn]\n}, {\n  :condition (input) -> vars.enthaelt(vars.haushalt_lebensmittel,input),\n  :value flow.vars.kategorien[:Haushalt,:Lebensmittel]\n}, {\n  :condition (input) -> vars.enthaelt(vars.gesundheit_apothekeDrogerie,input),\n  :value flow.vars.kategorien[:Gesundheit,:ApothekeDrogerie]\n}, {\n  :condition (input) -> vars.enthaelt(vars.kommunikationMedien_radioTv,input),\n  :value flow.vars.kategorien[:KommunikationMedien,:RadioTv]\n}, {\n  :condition (input) -> vars.enthaelt(vars.shopping_online,input),\n  :value flow.vars.kategorien[:Shopping,:Online]\n}, {\n  :condition (input) -> vars.enthaelt(vars.shopping_geschaeft,input),\n  :value flow.vars.kategorien[:Shopping,:Geschaeft]\n}, {\n  :condition (input) -> vars.enthaelt(vars.steuernAbgaben_gebuehren,input),\n  :value flow.vars.kategorien[:SteuernAbgaben,:Gebuehren]\n}, {\n  :condition (input) -> vars.enthaelt(vars.steuernAbgaben_motorrad,input),\n  :value flow.vars.kategorien[:SteuernAbgaben,:Motorrad]\n}, {\n  :condition (input) -> vars.enthaelt(vars.mobilitaet_tanken,input),\n  :value flow.vars.kategorien[:Mobilitaet,:Tanken]\n}, {\n  :condition (input) -> vars.enthaelt(vars.mobilitaet_fahrzeuge,input),\n  :value flow.vars.kategorien[:Mobilitaet,:Fahrzeuge]\n}, {\n  :condition (input) -> vars.enthaelt(vars.mobilitaet_zugbus,input),\n  :value flow.vars.kategorien[:Mobilitaet,:ZugBus]\n}, {\n  :condition (input) -> vars.enthaelt(vars.wohnen_baumarkt,input),\n  :value flow.vars.kategorien[:Wohnen,:Baumarkt]\n}, {\n  :condition (input) -> vars.enthaelt(vars.wohnen_kredit,input),\n  :value flow.vars.kategorien[:Wohnen,:Kredit]\n}, {\n  :condition (input) -> vars.enthaelt(vars.verschiedenes_unterhalt,input),\n  :value flow.vars.kategorien[:Verschiedenes,:Unterhalt]\n}, {\n  :condition (input) -> vars.enthaelt(vars.verschiedenes_unterstuetzung,input),\n  :value flow.vars.kategorien[:Verschiedenes,:Unterstuetzung]\n}, {\n  :condition (input) -> vars.enthaelt(vars.verschiedenes_reisen,input),\n  :value flow.vars.kategorien[:Verschiedenes,:Reisen]\n}, {\n  :condition (input) -> vars.enthaelt(vars.verschiedenes_kreditkarte,input),\n  :value flow.vars.kategorien[:Verschiedenes,:Kreditkarte]\n}]"
         },
         "defaultValue": {
           "widgetType": "expression/code",
@@ -2478,13 +2610,13 @@
         "model": {}
       },
       "pos": {
-        "x": 1210,
+        "x": 1386,
         "y": 362
       }
     },
     {
       "id": "com.twineworks.tweakstreet.library.steps.map.mapper_58181b6c-22ec-4afe-b4f2-6432b8d592d0",
-      "name": "Value Mapper: Kategorie/Subkategorie",
+      "name": "Value Mapper: Verwendungszweck > Kategorie/Subkategorie",
       "type": "com.twineworks.tweakstreet.library.steps.map.mapper",
       "instanceCount": {
         "widgetType": "expression/number",
@@ -2495,7 +2627,7 @@
       },
       "data": {
         "meta": {
-          "name": "Value Mapper: Kategorie/Subkategorie",
+          "name": "Value Mapper: Verwendungszweck > Kategorie/Subkategorie",
           "showingComment": false,
           "comment": {
             "markdown": {
@@ -2559,30 +2691,30 @@
                 "value": {
                   "widgetType": "expression/code",
                   "widgetData": {
-                    "text": "[\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\", \"Kaufland\",\"FRATELLICAR\"]",
+                    "text": "[\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\", \"Kaufland\",\"FRATELLICAR\",\"BELVINIDE\"]",
                     "size": {
                       "width": 0,
                       "height": 36
                     },
                     "syntax": "tweakflow"
                   },
-                  "code": "[\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\", \"Kaufland\",\"FRATELLICAR\"]"
+                  "code": "[\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\", \"Kaufland\",\"FRATELLICAR\",\"BELVINIDE\"]"
                 }
               },
               {
-                "name": "gesundheit_drogerie",
+                "name": "gesundheit_apothekeDrogerie",
                 "type": "any",
                 "value": {
                   "widgetType": "expression/code",
                   "widgetData": {
-                    "text": "[\"PARFUEMERIE DOUGLAS\"]",
+                    "text": "[\"PARFUEMERIE DOUGLAS\",\"APOTHEKE\"]",
                     "size": {
                       "width": 0,
                       "height": 36
                     },
                     "syntax": "tweakflow"
                   },
-                  "code": "[\"PARFUEMERIE DOUGLAS\"]"
+                  "code": "[\"PARFUEMERIE DOUGLAS\",\"APOTHEKE\"]"
                 }
               },
               {
@@ -2698,6 +2830,22 @@
                 }
               },
               {
+                "name": "mobilitaet_zugBus",
+                "type": "any",
+                "value": {
+                  "widgetType": "expression/code",
+                  "widgetData": {
+                    "text": "['DBVERTRIEBG','DB Vertrieb ']",
+                    "size": {
+                      "width": 0,
+                      "height": 36
+                    },
+                    "syntax": "tweakflow"
+                  },
+                  "code": "['DBVERTRIEBG','DB Vertrieb ']"
+                }
+              },
+              {
                 "name": "wohnen_baumarkt",
                 "type": "any",
                 "value": {
@@ -2751,14 +2899,14 @@
                 "value": {
                   "widgetType": "expression/code",
                   "widgetData": {
-                    "text": "['Unterstützung Studium']",
+                    "text": "[\"Unterstützung Studium\",\"Studiengebühren\"]",
                     "size": {
                       "width": 0,
                       "height": 36
                     },
                     "syntax": "tweakflow"
                   },
-                  "code": "['Unterstützung Studium']"
+                  "code": "[\"Unterstützung Studium\",\"Studiengebühren\"]"
                 }
               },
               {
@@ -2767,14 +2915,14 @@
                 "value": {
                   "widgetType": "expression/code",
                   "widgetData": {
-                    "text": "['KREDITKARTENABRECHNUNG']",
+                    "text": "[\"KREDITKARTENABRECHNUNG\"]",
                     "size": {
                       "width": 0,
                       "height": 36
                     },
                     "syntax": "tweakflow"
                   },
-                  "code": "['KREDITKARTENABRECHNUNG']"
+                  "code": "[\"KREDITKARTENABRECHNUNG\"]"
                 }
               }
             ]
@@ -2876,14 +3024,14 @@
                     "condition": {
                       "widgetType": "expression/code",
                       "widgetData": {
-                        "text": "(input) -> vars.enthaelt(vars.gesundheit_drogerie,input)",
+                        "text": "(input) -> vars.enthaelt(vars.gesundheit_apothekeDrogerie,input)",
                         "size": {
                           "width": 0,
                           "height": 36
                         },
                         "syntax": "tweakflow"
                       },
-                      "code": "(input) -> vars.enthaelt(vars.gesundheit_drogerie,input)"
+                      "code": "(input) -> vars.enthaelt(vars.gesundheit_apothekeDrogerie,input)"
                     },
                     "value": {
                       "widgetType": "expression/code",
@@ -3092,6 +3240,34 @@
                         "syntax": "tweakflow"
                       },
                       "code": "flow.vars.kategorien[:Mobilitaet,:Fahrzeuge]"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "condition": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "(input) -> vars.enthaelt(vars.mobilitaet_zugBus,input)",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "(input) -> vars.enthaelt(vars.mobilitaet_zugBus,input)"
+                    },
+                    "value": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "flow.vars.kategorien[:Mobilitaet,:ZugBus]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "flow.vars.kategorien[:Mobilitaet,:ZugBus]"
                     }
                   }
                 },
@@ -3238,7 +3414,7 @@
               ]
             }
           },
-          "code": "[{\n  :condition (input) -> vars.enthaelt(vars.einkommen_lohn,input),\n  :value flow.vars.kategorien[:Einkommen,:Lohn]\n}, {\n  :condition (input) -> vars.enthaelt(vars.haushalt_lebensmittel,input),\n  :value flow.vars.kategorien[:Haushalt,:Lebensmittel]\n}, {\n  :condition (input) -> vars.enthaelt(vars.gesundheit_drogerie,input),\n  :value flow.vars.kategorien[:Gesundheit,:Drogerie]\n}, {\n  :condition (input) -> vars.enthaelt(vars.kommunikationMedien_radioTv,input),\n  :value flow.vars.kategorien[:KommunikationMedien,:RadioTv]\n}, {\n  :condition (input) -> vars.enthaelt(vars.shopping_online,input),\n  :value flow.vars.kategorien[:Shopping,:Online]\n}, {\n  :condition (input) -> vars.enthaelt(vars.shopping_geschaeft,input),\n  :value flow.vars.kategorien[:Shopping,:Geschaeft]\n}, {\n  :condition (input) -> vars.enthaelt(vars.steuernAbgaben_gebuehren,input),\n  :value flow.vars.kategorien[:SteuernAbgaben,:Gebuehren]\n}, {\n  :condition (input) -> vars.enthaelt(vars.steuernAbgaben_motorrad,input),\n  :value flow.vars.kategorien[:SteuernAbgaben,:Motorrad]\n}, {\n  :condition (input) -> vars.enthaelt(vars.mobilitaet_tanken,input),\n  :value flow.vars.kategorien[:Mobilitaet,:Tanken]\n}, {\n  :condition (input) -> vars.enthaelt(vars.mobilitaet_fahrzeuge,input),\n  :value flow.vars.kategorien[:Mobilitaet,:Fahrzeuge]\n}, {\n  :condition (input) -> vars.enthaelt(vars.wohnen_baumarkt,input),\n  :value flow.vars.kategorien[:Wohnen,:Baumarkt]\n}, {\n  :condition (input) -> vars.enthaelt(vars.wohnen_kredit,input),\n  :value flow.vars.kategorien[:Wohnen,:Kredit]\n}, {\n  :condition (input) -> vars.enthaelt(vars.verschiedenes_unterhalt,input),\n  :value flow.vars.kategorien[:Verschiedenes,:Unterhalt]\n}, {\n  :condition (input) -> vars.enthaelt(vars.verschiedenes_unterstuetzung,input),\n  :value flow.vars.kategorien[:Verschiedenes,:Unterstuetzung]\n}, {\n  :condition (input) -> vars.enthaelt(vars.verschiedenes_kreditkarte,input),\n  :value flow.vars.kategorien[:Verschiedenes,:Kreditkarte]\n}]"
+          "code": "[{\n  :condition (input) -> vars.enthaelt(vars.einkommen_lohn,input),\n  :value flow.vars.kategorien[:Einkommen,:Lohn]\n}, {\n  :condition (input) -> vars.enthaelt(vars.haushalt_lebensmittel,input),\n  :value flow.vars.kategorien[:Haushalt,:Lebensmittel]\n}, {\n  :condition (input) -> vars.enthaelt(vars.gesundheit_apothekeDrogerie,input),\n  :value flow.vars.kategorien[:Gesundheit,:Drogerie]\n}, {\n  :condition (input) -> vars.enthaelt(vars.kommunikationMedien_radioTv,input),\n  :value flow.vars.kategorien[:KommunikationMedien,:RadioTv]\n}, {\n  :condition (input) -> vars.enthaelt(vars.shopping_online,input),\n  :value flow.vars.kategorien[:Shopping,:Online]\n}, {\n  :condition (input) -> vars.enthaelt(vars.shopping_geschaeft,input),\n  :value flow.vars.kategorien[:Shopping,:Geschaeft]\n}, {\n  :condition (input) -> vars.enthaelt(vars.steuernAbgaben_gebuehren,input),\n  :value flow.vars.kategorien[:SteuernAbgaben,:Gebuehren]\n}, {\n  :condition (input) -> vars.enthaelt(vars.steuernAbgaben_motorrad,input),\n  :value flow.vars.kategorien[:SteuernAbgaben,:Motorrad]\n}, {\n  :condition (input) -> vars.enthaelt(vars.mobilitaet_tanken,input),\n  :value flow.vars.kategorien[:Mobilitaet,:Tanken]\n}, {\n  :condition (input) -> vars.enthaelt(vars.mobilitaet_fahrzeuge,input),\n  :value flow.vars.kategorien[:Mobilitaet,:Fahrzeuge]\n}, {\n  :condition (input) -> vars.enthaelt(vars.mobilitaet_zugBus,input),\n  :value flow.vars.kategorien[:Mobilitaet,:ZugBus]\n}, {\n  :condition (input) -> vars.enthaelt(vars.wohnen_baumarkt,input),\n  :value flow.vars.kategorien[:Wohnen,:Baumarkt]\n}, {\n  :condition (input) -> vars.enthaelt(vars.wohnen_kredit,input),\n  :value flow.vars.kategorien[:Wohnen,:Kredit]\n}, {\n  :condition (input) -> vars.enthaelt(vars.verschiedenes_unterhalt,input),\n  :value flow.vars.kategorien[:Verschiedenes,:Unterhalt]\n}, {\n  :condition (input) -> vars.enthaelt(vars.verschiedenes_unterstuetzung,input),\n  :value flow.vars.kategorien[:Verschiedenes,:Unterstuetzung]\n}, {\n  :condition (input) -> vars.enthaelt(vars.verschiedenes_kreditkarte,input),\n  :value flow.vars.kategorien[:Verschiedenes,:Kreditkarte]\n}]"
         },
         "defaultValue": {
           "widgetType": "expression/code",
@@ -3289,7 +3465,7 @@
         "model": {}
       },
       "pos": {
-        "x": 1034,
+        "x": 1082,
         "y": 138
       }
     },
@@ -3355,7 +3531,7 @@
         "model": {}
       },
       "pos": {
-        "x": 1210,
+        "x": 1386,
         "y": 138
       }
     },
@@ -3421,7 +3597,7 @@
         "model": {}
       },
       "pos": {
-        "x": 1626,
+        "x": 1802,
         "y": 298
       }
     },
@@ -3458,7 +3634,7 @@
         "editor": {}
       },
       "pos": {
-        "x": 2010,
+        "x": 2186,
         "y": 298
       }
     },
@@ -3602,7 +3778,7 @@
         "model": {}
       },
       "pos": {
-        "x": 1850,
+        "x": 2026,
         "y": 298
       }
     }
