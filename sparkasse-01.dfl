@@ -678,8 +678,8 @@
         "model": {}
       },
       "pos": {
-        "x": 442,
-        "y": 138
+        "x": 362,
+        "y": 106
       }
     },
     {
@@ -791,8 +791,8 @@
         "model": {}
       },
       "pos": {
-        "x": 1066,
-        "y": 138
+        "x": 954,
+        "y": 106
       }
     },
     {
@@ -944,8 +944,8 @@
         "model": {}
       },
       "pos": {
-        "x": 746,
-        "y": 138
+        "x": 634,
+        "y": 106
       }
     },
     {
@@ -1138,13 +1138,13 @@
         "model": {}
       },
       "pos": {
-        "x": 746,
-        "y": 506
+        "x": 634,
+        "y": 490
       }
     },
     {
       "id": "com.twineworks.tweakstreet.library.steps.map.mongodbinsertupdate_a7bc7e28-5d63-44f2-a08d-4245d366e7e1",
-      "name": "MongoDB Update or Replace",
+      "name": "MongoDB Update",
       "type": "com.twineworks.tweakstreet.library.steps.map.mongodbinsertupdate",
       "instanceCount": {
         "widgetType": "expression/number",
@@ -1155,7 +1155,7 @@
       },
       "data": {
         "meta": {
-          "name": "MongoDB Update or Replace",
+          "name": "MongoDB Update",
           "showingComment": false,
           "comment": {
             "markdown": {
@@ -1376,8 +1376,8 @@
         "model": {}
       },
       "pos": {
-        "x": 1658,
-        "y": 522
+        "x": 1450,
+        "y": 490
       }
     },
     {
@@ -1482,6 +1482,14 @@
                 "field": {
                   "value": {
                     "gate": "in",
+                    "name": "Subkategorie"
+                  }
+                }
+              },
+              {
+                "field": {
+                  "value": {
+                    "gate": "in",
                     "name": "Beguenstigter_Zahlungspflichtiger"
                   }
                 }
@@ -1552,8 +1560,8 @@
         "model": {}
       },
       "pos": {
-        "x": 1658,
-        "y": 138
+        "x": 1450,
+        "y": 106
       }
     },
     {
@@ -1699,8 +1707,8 @@
         "model": {}
       },
       "pos": {
-        "x": 218,
-        "y": 138
+        "x": 154,
+        "y": 106
       }
     },
     {
@@ -1765,8 +1773,8 @@
         "model": {}
       },
       "pos": {
-        "x": 1658,
-        "y": 330
+        "x": 1450,
+        "y": 298
       }
     },
     {
@@ -1802,8 +1810,8 @@
         "editor": {}
       },
       "pos": {
-        "x": 2042,
-        "y": 330
+        "x": 1818,
+        "y": 298
       }
     },
     {
@@ -1946,13 +1954,13 @@
         "model": {}
       },
       "pos": {
-        "x": 1882,
-        "y": 330
+        "x": 1642,
+        "y": 298
       }
     },
     {
       "id": "com.twineworks.tweakstreet.library.steps.flatmap.datatable_93755faf-7668-4ee8-99c9-76683e336f11",
-      "name": "Data Table",
+      "name": "Data Table: Kategorien/Subkategorien",
       "type": "com.twineworks.tweakstreet.library.steps.flatmap.datatable",
       "instanceCount": {
         "widgetType": "expression/number",
@@ -1963,7 +1971,7 @@
       },
       "data": {
         "meta": {
-          "name": "Data Table",
+          "name": "Data Table: Kategorien/Subkategorien",
           "showingComment": false,
           "comment": {
             "markdown": {
@@ -2769,8 +2777,8 @@
         "model": {}
       },
       "pos": {
-        "x": 1338,
-        "y": 330
+        "x": 1178,
+        "y": 298
       }
     },
     {
@@ -2895,13 +2903,13 @@
         "model": {}
       },
       "pos": {
-        "x": 1338,
-        "y": 138
+        "x": 1178,
+        "y": 106
       }
     },
     {
       "id": "com.twineworks.tweakstreet.library.steps.bool.filter_26679266-6843-474d-a5cc-43bb6606cbe6",
-      "name": "Filter:ungültige Zeilen",
+      "name": "Filter: Leerzeilen",
       "type": "com.twineworks.tweakstreet.library.steps.bool.filter",
       "instanceCount": {
         "widgetType": "expression/number",
@@ -2912,7 +2920,7 @@
       },
       "data": {
         "meta": {
-          "name": "Filter:ungültige Zeilen",
+          "name": "Filter: Leerzeilen",
           "showingComment": false,
           "comment": {
             "markdown": {
@@ -2961,8 +2969,8 @@
         "model": {}
       },
       "pos": {
-        "x": 746,
-        "y": 330
+        "x": 634,
+        "y": 298
       }
     },
     {
@@ -2998,8 +3006,8 @@
         "editor": {}
       },
       "pos": {
-        "x": 554,
-        "y": 330
+        "x": 362,
+        "y": 298
       }
     }
   ],
