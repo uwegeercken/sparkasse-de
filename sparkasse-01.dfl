@@ -51,24 +51,7 @@
     },
     "variables": {
       "variables": {
-        "list": [
-          {
-            "name": "kategorien",
-            "type": "any",
-            "value": {
-              "widgetType": "expression/code",
-              "widgetData": {
-                "text": "{\n  :Einkommen {\n    :Lohn {:Kategorie 'Einkommen', :Subkategorie 'Lohn'},\n    :Zinsen {:Kategorie 'Einkommen', :Subkategorie 'Zinsen'},\n    :Rueckerstattung {:Kategorie 'Einkommen', :Subkategorie 'Rücherstattung'},\n    :Verschiedenes {:Kategorie 'Einkommen', :Subkategorie 'Verschiedenes'}\n  },\n  :KommunikationMedien {\n    :Handy {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Handy'},\n    :Telefon {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Telefon'},\n    :Internet {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Internet'},\n    :RadioTv {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Radio/TV'},\n    :Verschiedenes {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Verschiedenes'}\n  },\n  :Gesundheit {\n    :ApothekeDrogerie {:Kategorie 'Gesundheit', :Subkategorie 'Apotheke/Drogerie'},\n    :Optiker {:Kategorie 'Gesundheit', :Subkategorie 'Optiker'},\n    :ArztKrankenhaus {:Kategorie 'Gesundheit', :Subkategorie 'Arzt/Krankenhaus'},\n    :Verschiedenes {:Kategorie 'Gesundheit', :Subkategorie 'Verschiedenes'}\n  },\n  :SteuernAbgaben {\n    :Fahrzeuge {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Fahrzeuge'},\n    :Gebuehren {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Gebuehren'},\n    :Verschiedenes {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Verschiedenes'}\n  },\n  :Mobilitaet {\n    :Fahrrad {:Kategorie 'Mobilitaet', :Subkategorie 'Fahrrad'},\n    :ZugBus {:Kategorie 'Mobilitaet', :Subkategorie 'Öffentlicher Verkehr'},\n    :Fahrzeuge {:Kategorie 'Mobilitaet', :Subkategorie 'Fahrzeuge'},\n    :Verschiedenes {:Kategorie 'Mobilitaet', :Subkategorie 'Verschiedenes'}\n  },\n  :Wohnen {\n    :Baumarkt {:Kategorie 'Wohnen', :Subkategorie 'Baumarkt'},\n    :Miete {:Kategorie 'Wohnen', :Subkategorie 'Miete'},\n    :Nebenkosten {:Kategorie 'Wohnen', :Subkategorie 'Nebenkosten'},\n    :Kredit {:Kategorie 'Wohnen', :Subkategorie 'Kredit'},\n    :Verschiedenes {:Kategorie 'Wohnen', :Subkategorie 'Verschiedenes'}\n  },\n  :Shopping {\n    :Online {:Kategorie 'Shopping', :Subkategorie 'Online'},\n    :Geschaeft {:Kategorie 'Shopping', :Subkategorie 'Geschaeft'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  },\n  :Haushalt {\n    :Lebensmittel {:Kategorie 'Haushalt', :Subkategorie 'Lebensmittel'},\n    :Haustiere {:Kategorie 'Haushalt', :Subkategorie 'Haustiere'},\n    :Bueroartikel {:Kategorie 'Haushalt', :Subkategorie 'Bueroartikel'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  },\n  :Verschiedenes {\n    :Unterhalt {:Kategorie 'Verschiedenes', :Subkategorie 'Unterhalt'},\n    :Unterstuetzung {:Kategorie 'Verschiedenes', :Subkategorie 'Unterstuetzung'},\n    :Kreditkarte {:Kategorie 'Verschiedenes', :Subkategorie 'Kreditkarte'},\n    :Bankautomat {:Kategorie 'Verschiedenes', :Subkategorie 'Bankautomat', :searchterms ['BARGELDAUSZAHLUNG']},\n    :Reisen {:Kategorie 'Verschiedenes', :Subkategorie 'Reisen'},\n  }\n}",
-                "size": {
-                  "width": 0,
-                  "height": 269
-                },
-                "syntax": "tweakflow"
-              },
-              "code": "{\n  :Einkommen {\n    :Lohn {:Kategorie 'Einkommen', :Subkategorie 'Lohn'},\n    :Zinsen {:Kategorie 'Einkommen', :Subkategorie 'Zinsen'},\n    :Rueckerstattung {:Kategorie 'Einkommen', :Subkategorie 'Rücherstattung'},\n    :Verschiedenes {:Kategorie 'Einkommen', :Subkategorie 'Verschiedenes'}\n  },\n  :KommunikationMedien {\n    :Handy {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Handy'},\n    :Telefon {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Telefon'},\n    :Internet {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Internet'},\n    :RadioTv {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Radio/TV'},\n    :Verschiedenes {:Kategorie 'Kommunikation und Medien', :Subkategorie 'Verschiedenes'}\n  },\n  :Gesundheit {\n    :ApothekeDrogerie {:Kategorie 'Gesundheit', :Subkategorie 'Apotheke/Drogerie'},\n    :Optiker {:Kategorie 'Gesundheit', :Subkategorie 'Optiker'},\n    :ArztKrankenhaus {:Kategorie 'Gesundheit', :Subkategorie 'Arzt/Krankenhaus'},\n    :Verschiedenes {:Kategorie 'Gesundheit', :Subkategorie 'Verschiedenes'}\n  },\n  :SteuernAbgaben {\n    :Fahrzeuge {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Fahrzeuge'},\n    :Gebuehren {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Gebuehren'},\n    :Verschiedenes {:Kategorie 'Steuern und Abgaben', :Subkategorie 'Verschiedenes'}\n  },\n  :Mobilitaet {\n    :Fahrrad {:Kategorie 'Mobilitaet', :Subkategorie 'Fahrrad'},\n    :ZugBus {:Kategorie 'Mobilitaet', :Subkategorie 'Öffentlicher Verkehr'},\n    :Fahrzeuge {:Kategorie 'Mobilitaet', :Subkategorie 'Fahrzeuge'},\n    :Verschiedenes {:Kategorie 'Mobilitaet', :Subkategorie 'Verschiedenes'}\n  },\n  :Wohnen {\n    :Baumarkt {:Kategorie 'Wohnen', :Subkategorie 'Baumarkt'},\n    :Miete {:Kategorie 'Wohnen', :Subkategorie 'Miete'},\n    :Nebenkosten {:Kategorie 'Wohnen', :Subkategorie 'Nebenkosten'},\n    :Kredit {:Kategorie 'Wohnen', :Subkategorie 'Kredit'},\n    :Verschiedenes {:Kategorie 'Wohnen', :Subkategorie 'Verschiedenes'}\n  },\n  :Shopping {\n    :Online {:Kategorie 'Shopping', :Subkategorie 'Online'},\n    :Geschaeft {:Kategorie 'Shopping', :Subkategorie 'Geschaeft'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  },\n  :Haushalt {\n    :Lebensmittel {:Kategorie 'Haushalt', :Subkategorie 'Lebensmittel'},\n    :Haustiere {:Kategorie 'Haushalt', :Subkategorie 'Haustiere'},\n    :Bueroartikel {:Kategorie 'Haushalt', :Subkategorie 'Bueroartikel'},\n    :Verschiedenes {:Kategorie 'Shopping', :Subkategorie 'Verschiedenes'}\n  },\n  :Verschiedenes {\n    :Unterhalt {:Kategorie 'Verschiedenes', :Subkategorie 'Unterhalt'},\n    :Unterstuetzung {:Kategorie 'Verschiedenes', :Subkategorie 'Unterstuetzung'},\n    :Kreditkarte {:Kategorie 'Verschiedenes', :Subkategorie 'Kreditkarte'},\n    :Bankautomat {:Kategorie 'Verschiedenes', :Subkategorie 'Bankautomat', :searchterms ['BARGELDAUSZAHLUNG']},\n    :Reisen {:Kategorie 'Verschiedenes', :Subkategorie 'Reisen'},\n  }\n}"
-            }
-          }
-        ]
+        "list": []
       },
       "editor": {
         "collapsed": false
@@ -784,14 +767,14 @@
                 "value": {
                   "widgetType": "expression/code",
                   "widgetData": {
-                    "text": "if in.Beguenstigter_Zahlungspflichtiger_Alternative \nthen\n  in.Beguenstigter_Zahlungspflichtiger_Alternative\nelse\n  in.Beguenstigter_Zahlungspflichtiger",
+                    "text": "if !in.Beguenstigter_Zahlungspflichtiger_Alternative \nthen\n  if in.Beguenstigter_Zahlungspflichtiger != \"\"\n  then\n    in.Beguenstigter_Zahlungspflichtiger\n  else\n    \"[undefiniert]\"\nelse\n  in.Beguenstigter_Zahlungspflichtiger_Alternative",
                     "size": {
                       "width": 0,
-                      "height": 115
+                      "height": 299
                     },
                     "syntax": "tweakflow"
                   },
-                  "code": "if in.Beguenstigter_Zahlungspflichtiger_Alternative \nthen\n  in.Beguenstigter_Zahlungspflichtiger_Alternative\nelse\n  in.Beguenstigter_Zahlungspflichtiger"
+                  "code": "if !in.Beguenstigter_Zahlungspflichtiger_Alternative \nthen\n  if in.Beguenstigter_Zahlungspflichtiger != \"\"\n  then\n    in.Beguenstigter_Zahlungspflichtiger\n  else\n    \"[undefiniert]\"\nelse\n  in.Beguenstigter_Zahlungspflichtiger_Alternative"
                 }
               }
             ]
@@ -802,7 +785,8 @@
         },
         "editor": {
           "showEntryVariables": true,
-          "showOutputFields": true
+          "showOutputFields": true,
+          "dialogWidth": "wide"
         },
         "model": {}
       },
@@ -888,12 +872,16 @@
               "code": "'.*' .. right.Suchtext .. '.*'"
             },
             "subject": {
-              "widgetType": "expression/string",
+              "widgetType": "expression/code",
               "widgetData": {
-                "interpolation": true,
-                "text": "${left.Beguenstigter_Zahlungspflichtiger}"
+                "text": "left.Beguenstigter_Zahlungspflichtiger",
+                "size": {
+                  "width": 0,
+                  "height": 36
+                },
+                "syntax": "tweakflow"
               },
-              "code": "let {\n  string interpolation_0: left.Beguenstigter_Zahlungspflichtiger;\n}\ninterpolation_0"
+              "code": "left.Beguenstigter_Zahlungspflichtiger"
             },
             "editor": {
               "collapsed": false
@@ -905,7 +893,7 @@
               }
             }
           },
-          "code": "((string subject, string pattern) -> boolean via {:class 'com.twineworks.tweakstreet.library.strings.Strings$matches'})(let {\n  string interpolation_0: left.Beguenstigter_Zahlungspflichtiger;\n}\ninterpolation_0, '.*' .. right.Suchtext .. '.*')"
+          "code": "((string subject, string pattern) -> boolean via {:class 'com.twineworks.tweakstreet.library.strings.Strings$matches'})(left.Beguenstigter_Zahlungspflichtiger, '.*' .. right.Suchtext .. '.*')"
         },
         "mode": {
           "widgetType": "expression/select",
@@ -1151,7 +1139,7 @@
       },
       "pos": {
         "x": 746,
-        "y": 362
+        "y": 506
       }
     },
     {
@@ -1389,7 +1377,7 @@
       },
       "pos": {
         "x": 1658,
-        "y": 490
+        "y": 522
       }
     },
     {
@@ -1778,7 +1766,7 @@
       },
       "pos": {
         "x": 1658,
-        "y": 298
+        "y": 330
       }
     },
     {
@@ -1815,7 +1803,7 @@
       },
       "pos": {
         "x": 2042,
-        "y": 298
+        "y": 330
       }
     },
     {
@@ -1959,7 +1947,7 @@
       },
       "pos": {
         "x": 1882,
-        "y": 298
+        "y": 330
       }
     },
     {
@@ -2083,14 +2071,78 @@
                     "expression/data-grid_field_b8ba13f8-66b2-4ac3-9625-34167d4691e8": {
                       "widgetType": "expression/code",
                       "widgetData": {
-                        "text": "[\"FAMILA MARKT\",\"MCDONALDS\",\"Schroeders Wasserstelle\",\"Nespresso\",\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\", \"Kaufland\",\"FRATELLICAR\",\"BELVINIDE\",\"FAMILA MARKT\"]",
+                        "text": "[\"Fratelli Carli\",\"LOTTO LING\",\"FAMILA MARKT\",\"MCDONALDS\",\"Schroeders Wasserstelle\",\"Nespresso\",\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\", \"Kaufland\",\"FRATELLICAR\",\"BELVINIDE\",\"FAMILA MARKT\",\"Hawesko\"]",
                         "size": {
                           "width": 0,
                           "height": 36
                         },
                         "syntax": "tweakflow"
                       },
-                      "code": "[\"FAMILA MARKT\",\"MCDONALDS\",\"Schroeders Wasserstelle\",\"Nespresso\",\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\", \"Kaufland\",\"FRATELLICAR\",\"BELVINIDE\",\"FAMILA MARKT\"]"
+                      "code": "[\"Fratelli Carli\",\"LOTTO LING\",\"FAMILA MARKT\",\"MCDONALDS\",\"Schroeders Wasserstelle\",\"Nespresso\",\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\", \"Kaufland\",\"FRATELLICAR\",\"BELVINIDE\",\"FAMILA MARKT\",\"Hawesko\"]"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "id": {
+                      "widgetType": "expression/string",
+                      "widgetData": {
+                        "interpolation": true,
+                        "text": "Haushalt"
+                      },
+                      "code": "'Haushalt'"
+                    },
+                    "name": {
+                      "widgetType": "expression/string",
+                      "widgetData": {
+                        "interpolation": true,
+                        "text": "Verschiedenes"
+                      },
+                      "code": "'Verschiedenes'"
+                    },
+                    "expression/data-grid_field_b8ba13f8-66b2-4ac3-9625-34167d4691e8": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "[\"Liebherr\"]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "[\"Liebherr\"]"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "id": {
+                      "widgetType": "expression/string",
+                      "widgetData": {
+                        "interpolation": true,
+                        "text": "Haushalt"
+                      },
+                      "code": "'Haushalt'"
+                    },
+                    "name": {
+                      "widgetType": "expression/string",
+                      "widgetData": {
+                        "interpolation": true,
+                        "text": "Haustiere"
+                      },
+                      "code": "'Haustiere'"
+                    },
+                    "expression/data-grid_field_b8ba13f8-66b2-4ac3-9625-34167d4691e8": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "[\"ACHIM VOSS HANDELS GMBH\"]",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "[\"ACHIM VOSS HANDELS GMBH\"]"
                     }
                   }
                 },
@@ -2115,14 +2167,14 @@
                     "expression/data-grid_field_b8ba13f8-66b2-4ac3-9625-34167d4691e8": {
                       "widgetType": "expression/code",
                       "widgetData": {
-                        "text": "[\"PARFUEMERIE DOUGLAS\",\"APOTHEKE\"]",
+                        "text": "[\"PARFUEMERIE DOUGLAS\",\"APOTHEKE\",\"Parfuemerie Douglas\"]",
                         "size": {
                           "width": 0,
                           "height": 36
                         },
                         "syntax": "tweakflow"
                       },
-                      "code": "[\"PARFUEMERIE DOUGLAS\",\"APOTHEKE\"]"
+                      "code": "[\"PARFUEMERIE DOUGLAS\",\"APOTHEKE\",\"Parfuemerie Douglas\"]"
                     }
                   }
                 },
@@ -2196,6 +2248,38 @@
                       "widgetType": "expression/string",
                       "widgetData": {
                         "interpolation": true,
+                        "text": "Steuern und Abgaben"
+                      },
+                      "code": "'Steuern und Abgaben'"
+                    },
+                    "name": {
+                      "widgetType": "expression/string",
+                      "widgetData": {
+                        "interpolation": true,
+                        "text": "Gebühren"
+                      },
+                      "code": "'Gebühren'"
+                    },
+                    "expression/data-grid_field_b8ba13f8-66b2-4ac3-9625-34167d4691e8": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "['DEKRA','Dekra','Landesoberkasse BW']",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "['DEKRA','Dekra','Landesoberkasse BW']"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "id": {
+                      "widgetType": "expression/string",
+                      "widgetData": {
+                        "interpolation": true,
                         "text": "Shopping"
                       },
                       "code": "'Shopping'"
@@ -2243,46 +2327,14 @@
                     "expression/data-grid_field_b8ba13f8-66b2-4ac3-9625-34167d4691e8": {
                       "widgetType": "expression/code",
                       "widgetData": {
-                        "text": "[\"Blumen Rathjens\",\"SCHMIDT\",\"LIESEGANG\",\"EURONICS\"]",
+                        "text": "[\"Blumen Rathjens\",\"SCHMIDT\",\"LIESEGANG\",\"EURONICS\",\"DEICHMANN\",\"I. D. SIEVERS\",\"MEDIA MARKT\"]",
                         "size": {
                           "width": 0,
                           "height": 36
                         },
                         "syntax": "tweakflow"
                       },
-                      "code": "[\"Blumen Rathjens\",\"SCHMIDT\",\"LIESEGANG\",\"EURONICS\"]"
-                    }
-                  }
-                },
-                {
-                  "fields": {
-                    "id": {
-                      "widgetType": "expression/string",
-                      "widgetData": {
-                        "interpolation": true,
-                        "text": "Steuern und Abgaben"
-                      },
-                      "code": "'Steuern und Abgaben'"
-                    },
-                    "name": {
-                      "widgetType": "expression/string",
-                      "widgetData": {
-                        "interpolation": true,
-                        "text": "Gebühren"
-                      },
-                      "code": "'Gebühren'"
-                    },
-                    "expression/data-grid_field_b8ba13f8-66b2-4ac3-9625-34167d4691e8": {
-                      "widgetType": "expression/code",
-                      "widgetData": {
-                        "text": "['DEKRA','Dekra']",
-                        "size": {
-                          "width": 0,
-                          "height": 36
-                        },
-                        "syntax": "tweakflow"
-                      },
-                      "code": "['DEKRA','Dekra']"
+                      "code": "[\"Blumen Rathjens\",\"SCHMIDT\",\"LIESEGANG\",\"EURONICS\",\"DEICHMANN\",\"I. D. SIEVERS\",\"MEDIA MARKT\"]"
                     }
                   }
                 },
@@ -2307,14 +2359,14 @@
                     "expression/data-grid_field_b8ba13f8-66b2-4ac3-9625-34167d4691e8": {
                       "widgetType": "expression/code",
                       "widgetData": {
-                        "text": "['Tankstelle','A. Willer','AVIA TS']",
+                        "text": "['Tankstelle','A. Willer','AVIA TS', 'SHELL','team TS']",
                         "size": {
                           "width": 0,
                           "height": 36
                         },
                         "syntax": "tweakflow"
                       },
-                      "code": "['Tankstelle','A. Willer','AVIA TS']"
+                      "code": "['Tankstelle','A. Willer','AVIA TS', 'SHELL','team TS']"
                     }
                   }
                 },
@@ -2339,14 +2391,46 @@
                     "expression/data-grid_field_b8ba13f8-66b2-4ac3-9625-34167d4691e8": {
                       "widgetType": "expression/code",
                       "widgetData": {
-                        "text": "['POLO','Polo']",
+                        "text": "['POLO','Polo','HUK-COBURG','HUK Coburg']",
                         "size": {
                           "width": 0,
                           "height": 36
                         },
                         "syntax": "tweakflow"
                       },
-                      "code": "['POLO','Polo']"
+                      "code": "['POLO','Polo','HUK-COBURG','HUK Coburg']"
+                    }
+                  }
+                },
+                {
+                  "fields": {
+                    "id": {
+                      "widgetType": "expression/string",
+                      "widgetData": {
+                        "interpolation": true,
+                        "text": "Mobilität"
+                      },
+                      "code": "'Mobilität'"
+                    },
+                    "name": {
+                      "widgetType": "expression/string",
+                      "widgetData": {
+                        "interpolation": true,
+                        "text": "Gebühren"
+                      },
+                      "code": "'Gebühren'"
+                    },
+                    "expression/data-grid_field_b8ba13f8-66b2-4ac3-9625-34167d4691e8": {
+                      "widgetType": "expression/code",
+                      "widgetData": {
+                        "text": "['KROSCHKE','KREIS RD-ECK']",
+                        "size": {
+                          "width": 0,
+                          "height": 36
+                        },
+                        "syntax": "tweakflow"
+                      },
+                      "code": "['KROSCHKE','KREIS RD-ECK']"
                     }
                   }
                 },
@@ -2609,7 +2693,7 @@
               ]
             }
           },
-          "code": "[{\n  :Kategorie 'Einkommen',\n  :Subkategorie 'Lohn',\n  :Suchbegriffe [\"Verdienstabrechnung\"]\n}, {\n  :Kategorie 'Haushalt',\n  :Subkategorie 'Lebensmittel',\n  :Suchbegriffe [\"FAMILA MARKT\",\"MCDONALDS\",\"Schroeders Wasserstelle\",\"Nespresso\",\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\", \"Kaufland\",\"FRATELLICAR\",\"BELVINIDE\",\"FAMILA MARKT\"]\n}, {\n  :Kategorie 'Gesundheit',\n  :Subkategorie 'Apotheke/Drogerie',\n  :Suchbegriffe [\"PARFUEMERIE DOUGLAS\",\"APOTHEKE\"]\n}, {\n  :Kategorie 'Kommunikation',\n  :Subkategorie 'Radio/TV',\n  :Suchbegriffe [\"Netflix.com\",\"NETFLIX.COM\"]\n}, {\n  :Kategorie 'Steuern und Abgaben',\n  :Subkategorie 'Motorrad',\n  :Suchbegriffe [\"Kfz-Steuer\"]\n}, {\n  :Kategorie 'Shopping',\n  :Subkategorie 'Online',\n  :Suchbegriffe ['AMZN', 'Amazon']\n}, {\n  :Kategorie 'Shopping',\n  :Subkategorie 'Geschäft',\n  :Suchbegriffe [\"Blumen Rathjens\",\"SCHMIDT\",\"LIESEGANG\",\"EURONICS\"]\n}, {\n  :Kategorie 'Steuern und Abgaben',\n  :Subkategorie 'Gebühren',\n  :Suchbegriffe ['DEKRA','Dekra']\n}, {\n  :Kategorie 'Mobilität',\n  :Subkategorie 'Tanken',\n  :Suchbegriffe ['Tankstelle','A. Willer','AVIA TS']\n}, {\n  :Kategorie 'Mobilität',\n  :Subkategorie 'Fahrzeuge',\n  :Suchbegriffe ['POLO','Polo']\n}, {\n  :Kategorie 'Mobilität',\n  :Subkategorie 'Öffentlicher Verkehr',\n  :Suchbegriffe ['DBVERTRIEBG','DB Vertrieb','DB AUTOMAT']\n}, {\n  :Kategorie 'Wohnen',\n  :Subkategorie 'Baumarkt',\n  :Suchbegriffe ['BAUMARKT', 'BAUZENTRUM']\n}, {\n  :Kategorie 'Wohnen',\n  :Subkategorie 'Kredit',\n  :Suchbegriffe ['Kreditzahlung']\n}, {\n  :Kategorie 'Verschiedenes',\n  :Subkategorie 'Unterhalt',\n  :Suchbegriffe ['Unterhalt']\n}, {\n  :Kategorie 'Verschiedenes',\n  :Subkategorie 'Studium',\n  :Suchbegriffe [\"Unterstützung Studium\",\"Studiengebühren\"]\n}, {\n  :Kategorie 'Verschiedenes',\n  :Subkategorie 'Kreditkarte',\n  :Suchbegriffe ['KREDITKARTENABRECHNUNG']\n}, {\n  :Kategorie 'Verschiedenes',\n  :Subkategorie 'Bankautomat',\n  :Suchbegriffe ['BARGELDAUSZAHLUNG']\n}, {\n  :Kategorie 'Verschiedenes',\n  :Subkategorie 'Reisen',\n  :Suchbegriffe ['ARBOREA']\n}]"
+          "code": "[{\n  :Kategorie 'Einkommen',\n  :Subkategorie 'Lohn',\n  :Suchbegriffe [\"Verdienstabrechnung\"]\n}, {\n  :Kategorie 'Haushalt',\n  :Subkategorie 'Lebensmittel',\n  :Suchbegriffe [\"Fratelli Carli\",\"LOTTO LING\",\"FAMILA MARKT\",\"MCDONALDS\",\"Schroeders Wasserstelle\",\"Nespresso\",\"GETRAENKE\",\"REWE\", \"FRISCHEMARKT\", \"ALDI\", \"Kaufland\",\"FRATELLICAR\",\"BELVINIDE\",\"FAMILA MARKT\",\"Hawesko\"]\n}, {\n  :Kategorie 'Haushalt',\n  :Subkategorie 'Verschiedenes',\n  :Suchbegriffe [\"Liebherr\"]\n}, {\n  :Kategorie 'Haushalt',\n  :Subkategorie 'Haustiere',\n  :Suchbegriffe [\"ACHIM VOSS HANDELS GMBH\"]\n}, {\n  :Kategorie 'Gesundheit',\n  :Subkategorie 'Apotheke/Drogerie',\n  :Suchbegriffe [\"PARFUEMERIE DOUGLAS\",\"APOTHEKE\",\"Parfuemerie Douglas\"]\n}, {\n  :Kategorie 'Kommunikation',\n  :Subkategorie 'Radio/TV',\n  :Suchbegriffe [\"Netflix.com\",\"NETFLIX.COM\"]\n}, {\n  :Kategorie 'Steuern und Abgaben',\n  :Subkategorie 'Motorrad',\n  :Suchbegriffe [\"Kfz-Steuer\"]\n}, {\n  :Kategorie 'Steuern und Abgaben',\n  :Subkategorie 'Gebühren',\n  :Suchbegriffe ['DEKRA','Dekra','Landesoberkasse BW']\n}, {\n  :Kategorie 'Shopping',\n  :Subkategorie 'Online',\n  :Suchbegriffe ['AMZN', 'Amazon']\n}, {\n  :Kategorie 'Shopping',\n  :Subkategorie 'Geschäft',\n  :Suchbegriffe [\"Blumen Rathjens\",\"SCHMIDT\",\"LIESEGANG\",\"EURONICS\",\"DEICHMANN\",\"I. D. SIEVERS\",\"MEDIA MARKT\"]\n}, {\n  :Kategorie 'Mobilität',\n  :Subkategorie 'Tanken',\n  :Suchbegriffe ['Tankstelle','A. Willer','AVIA TS', 'SHELL','team TS']\n}, {\n  :Kategorie 'Mobilität',\n  :Subkategorie 'Fahrzeuge',\n  :Suchbegriffe ['POLO','Polo','HUK-COBURG','HUK Coburg']\n}, {\n  :Kategorie 'Mobilität',\n  :Subkategorie 'Gebühren',\n  :Suchbegriffe ['KROSCHKE','KREIS RD-ECK']\n}, {\n  :Kategorie 'Mobilität',\n  :Subkategorie 'Öffentlicher Verkehr',\n  :Suchbegriffe ['DBVERTRIEBG','DB Vertrieb','DB AUTOMAT']\n}, {\n  :Kategorie 'Wohnen',\n  :Subkategorie 'Baumarkt',\n  :Suchbegriffe ['BAUMARKT', 'BAUZENTRUM']\n}, {\n  :Kategorie 'Wohnen',\n  :Subkategorie 'Kredit',\n  :Suchbegriffe ['Kreditzahlung']\n}, {\n  :Kategorie 'Verschiedenes',\n  :Subkategorie 'Unterhalt',\n  :Suchbegriffe ['Unterhalt']\n}, {\n  :Kategorie 'Verschiedenes',\n  :Subkategorie 'Studium',\n  :Suchbegriffe [\"Unterstützung Studium\",\"Studiengebühren\"]\n}, {\n  :Kategorie 'Verschiedenes',\n  :Subkategorie 'Kreditkarte',\n  :Suchbegriffe ['KREDITKARTENABRECHNUNG']\n}, {\n  :Kategorie 'Verschiedenes',\n  :Subkategorie 'Bankautomat',\n  :Suchbegriffe ['BARGELDAUSZAHLUNG']\n}, {\n  :Kategorie 'Verschiedenes',\n  :Subkategorie 'Reisen',\n  :Suchbegriffe ['ARBOREA']\n}]"
         },
         "resultVariables": {
           "variables": {
@@ -2686,7 +2770,7 @@
       },
       "pos": {
         "x": 1338,
-        "y": 362
+        "y": 330
       }
     },
     {
@@ -2814,6 +2898,109 @@
         "x": 1338,
         "y": 138
       }
+    },
+    {
+      "id": "com.twineworks.tweakstreet.library.steps.bool.filter_26679266-6843-474d-a5cc-43bb6606cbe6",
+      "name": "Filter:ungültige Zeilen",
+      "type": "com.twineworks.tweakstreet.library.steps.bool.filter",
+      "instanceCount": {
+        "widgetType": "expression/number",
+        "widgetData": {
+          "text": "1"
+        },
+        "code": "1"
+      },
+      "data": {
+        "meta": {
+          "name": "Filter:ungültige Zeilen",
+          "showingComment": false,
+          "comment": {
+            "markdown": {
+              "text": {
+                "text": "",
+                "syntax": "markdown",
+                "size": {
+                  "width": "100%",
+                  "height": "100%"
+                }
+              },
+              "size": {
+                "width": null,
+                "height": 160
+              },
+              "view": "edit"
+            },
+            "editor": {
+              "collapsed": true
+            }
+          }
+        },
+        "entryVariables": {
+          "variables": {
+            "list": []
+          },
+          "editor": {
+            "collapsed": false
+          }
+        },
+        "condition": {
+          "widgetType": "expression/code",
+          "widgetData": {
+            "text": "in.Suchtext != nil && in.Beguenstigter_Zahlungspflichtiger_Alternative != nil",
+            "size": {
+              "width": 0,
+              "height": 36
+            },
+            "syntax": "tweakflow"
+          },
+          "code": "in.Suchtext != nil && in.Beguenstigter_Zahlungspflichtiger_Alternative != nil"
+        },
+        "editor": {
+          "showEntryVariables": false
+        },
+        "model": {}
+      },
+      "pos": {
+        "x": 746,
+        "y": 330
+      }
+    },
+    {
+      "id": "com.twineworks.tweakstreet.library.steps.map.dummy_29e91fae-541b-4f4e-a378-5975e861d1e7",
+      "name": "Dummy",
+      "type": "com.twineworks.tweakstreet.library.steps.map.dummy",
+      "instanceCount": {
+        "widgetType": "expression/number",
+        "widgetData": {
+          "text": "1"
+        },
+        "code": "1"
+      },
+      "data": {
+        "meta": {
+          "name": "Dummy",
+          "comment": {
+            "markdown": {
+              "text": {
+                "text": ""
+              },
+              "size": {
+                "width": null,
+                "height": 160
+              },
+              "editor": {
+                "collapsed": true
+              }
+            }
+          },
+          "showingComment": false
+        },
+        "editor": {}
+      },
+      "pos": {
+        "x": 554,
+        "y": 330
+      }
     }
   ],
   "hops": [
@@ -2838,21 +3025,6 @@
       "toStep": "com.twineworks.tweakstreet.library.steps.map.calculator_3e9225c5-6d3f-4b6e-98bc-e6ff969652ac",
       "fromGate": "out",
       "toGate": "in",
-      "disabled": false,
-      "partitioner": {
-        "widgetType": "expression/code",
-        "widgetData": {
-          "text": ""
-        },
-        "code": "nil"
-      }
-    },
-    {
-      "id": "12ee5d60-581f-4f75-b0a5-b43ed8782b6e",
-      "fromStep": "com.twineworks.tweakstreet.library.steps.input.csvinput_10c16c96-5e6c-456b-9982-63588556eabe",
-      "toStep": "com.twineworks.tweakstreet.library.steps.join.conditionjoin_db76ef8e-54a6-4391-83b3-ceb362c3f245",
-      "fromGate": "out",
-      "toGate": "right",
       "disabled": false,
       "partitioner": {
         "widgetType": "expression/code",
@@ -2972,6 +3144,51 @@
       "fromStep": "com.twineworks.tweakstreet.library.steps.join.conditionjoin_8088593a-78e6-426e-8123-d611a01eed64",
       "toStep": "com.twineworks.tweakstreet.library.steps.map.pickfields_2768a542-1c91-4625-8db2-7e501d4edd0b",
       "fromGate": "out",
+      "toGate": "in",
+      "disabled": false,
+      "partitioner": {
+        "widgetType": "expression/code",
+        "widgetData": {
+          "text": ""
+        },
+        "code": "nil"
+      }
+    },
+    {
+      "id": "ae801ec0-659f-4bfd-b932-6f918fe931bf",
+      "fromStep": "com.twineworks.tweakstreet.library.steps.input.csvinput_10c16c96-5e6c-456b-9982-63588556eabe",
+      "toStep": "com.twineworks.tweakstreet.library.steps.bool.filter_26679266-6843-474d-a5cc-43bb6606cbe6",
+      "fromGate": "out",
+      "toGate": "in",
+      "disabled": false,
+      "partitioner": {
+        "widgetType": "expression/code",
+        "widgetData": {
+          "text": ""
+        },
+        "code": "nil"
+      }
+    },
+    {
+      "id": "1980c63c-1695-4693-b74b-08aa0d36f066",
+      "fromStep": "com.twineworks.tweakstreet.library.steps.bool.filter_26679266-6843-474d-a5cc-43bb6606cbe6",
+      "toStep": "com.twineworks.tweakstreet.library.steps.join.conditionjoin_db76ef8e-54a6-4391-83b3-ceb362c3f245",
+      "fromGate": "yes",
+      "toGate": "right",
+      "disabled": false,
+      "partitioner": {
+        "widgetType": "expression/code",
+        "widgetData": {
+          "text": ""
+        },
+        "code": "nil"
+      }
+    },
+    {
+      "id": "c75a8b03-0b87-436e-9e91-5856ca60dc03",
+      "fromStep": "com.twineworks.tweakstreet.library.steps.bool.filter_26679266-6843-474d-a5cc-43bb6606cbe6",
+      "toStep": "com.twineworks.tweakstreet.library.steps.map.dummy_29e91fae-541b-4f4e-a378-5975e861d1e7",
+      "fromGate": "no",
       "toGate": "in",
       "disabled": false,
       "partitioner": {
